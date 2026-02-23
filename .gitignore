@@ -1,8 +1,7 @@
 # # Local AI workspace — not tracked
 # ai/
 
-# Claude and editor config
-CLAUDE.md
+# Editor config
 .cursorrules
 
 # Dependencies
