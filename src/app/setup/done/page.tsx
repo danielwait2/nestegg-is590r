@@ -4,6 +4,8 @@ import Link from "next/link";
 import { getChild, getProgress, getProjection } from "@/lib/storage";
 import { calcProjection } from "@/lib/projection";
 import { getPlanForState } from "@/data/statePlans";
+import { syncProgress } from "@/lib/syncProgress";
+import { trackEvent } from "@/lib/events";
 
 const CURRENT_YEAR = new Date().getFullYear();
 
@@ -18,6 +20,7 @@ export default function DonePage() {
   const [step2Done, setStep2Done] = useState(false);
   const [step3Done, setStep3Done] = useState(false);
   const [shareMsg, setShareMsg] = useState("");
+  const [isSignedIn, setIsSignedIn] = useState(false);
 
   useEffect(() => {
     const child = getChild();
@@ -40,6 +43,18 @@ export default function DonePage() {
     const years = Math.max(18 - (CURRENT_YEAR - birthYear), 0);
     setMonthly(monthlyAmt);
     setProjected(Math.round(calcProjection(monthlyAmt, years)));
+
+    const signedIn = document.cookie.includes('nestegg_session');
+    setIsSignedIn(signedIn);
+
+    if (signedIn) {
+      syncProgress();
+    }
+
+    if (progress.step1 && progress.step2 && progress.step3) {
+      trackEvent('flow_completed');
+    }
+
     setLoaded(true);
   }, []);
 
@@ -62,6 +77,7 @@ export default function DonePage() {
     } catch {
       setShareMsg(url);
     }
+    trackEvent('share_link_clicked');
     setTimeout(() => setShareMsg(""), 3000);
   }
 
@@ -73,6 +89,7 @@ export default function DonePage() {
     } catch {
       setShareMsg(url);
     }
+    trackEvent('gift_link_clicked');
     setTimeout(() => setShareMsg(""), 3000);
   }
 
@@ -130,6 +147,18 @@ export default function DonePage() {
           )}
 
           <div className="space-y-3">
+            {!isSignedIn && (
+              <div className="border border-dashed border-green-200 rounded-xl p-4 bg-green-50/50">
+                <p className="text-sm font-medium text-gray-700 mb-1">Save your progress</p>
+                <p className="text-sm text-gray-500 mb-3">Sign in to restore your setup on any device.</p>
+                <a
+                  href="/auth"
+                  className="block text-center bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors text-sm"
+                >
+                  Save with email →
+                </a>
+              </div>
+            )}
             <button
               onClick={handleShare}
               className="w-full bg-gray-900 hover:bg-gray-800 text-white font-semibold py-3 px-6 rounded-xl transition-colors"

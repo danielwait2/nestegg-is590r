@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { getProgress, setProgress } from "@/lib/storage";
+import { trackEvent } from "@/lib/events";
 
 export default function MarkAsDone({
   stepKey,
@@ -21,6 +22,9 @@ export default function MarkAsDone({
     setChecked(val);
     const progress = getProgress();
     setProgress({ ...progress, [stepKey]: val });
+    if (val) {
+      trackEvent(`step_${stepKey === 'step1' ? '529' : stepKey === 'step2' ? 'utma' : 'credit'}_completed`);
+    }
     onChecked?.(val);
   }
 

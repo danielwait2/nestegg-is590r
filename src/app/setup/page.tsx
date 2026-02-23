@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { setChild } from "@/lib/storage";
 import { STATE_PLANS } from "@/data/statePlans";
+import { trackEvent } from "@/lib/events";
 
 const CURRENT_YEAR = new Date().getFullYear();
 const MONTHS = [
@@ -24,6 +25,7 @@ export default function SetupPage() {
     e.preventDefault();
     if (!name.trim() || !state) return;
     setChild({ name: name.trim(), birthYear, birthMonth, state });
+    trackEvent('flow_started', { state });
     router.push("/setup/529");
   }
 

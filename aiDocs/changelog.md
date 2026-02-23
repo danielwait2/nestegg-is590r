@@ -5,6 +5,21 @@ Format: date, what was built (technical), business impact (1–2 sentences).
 
 ---
 
+## 2026-02-23 — Phase 2 Local MVP Build (Persistence + Auth)
+
+**What was built:**
+Full persistence and auth layer on top of Phase 1: `src/lib/db.ts` (SQLite via `better-sqlite3`, 6 tables auto-created on first run: users, sessions, children, setup_progress, events, gift_links), `src/lib/auth.ts` (createSession, getSession, deleteSession with 30-day httpOnly cookie), `src/lib/events.ts` (fire-and-forget event tracker), `src/lib/syncProgress.ts` (reads localStorage, POSTs to /api/sync). All API routes: `POST /api/auth/send` (logs confirm link to terminal), `GET /api/auth/confirm` (sets cookie, redirects), `POST /api/auth/signout`, `POST /api/sync`, `GET /api/me`, `PATCH /api/me/contribution`, `POST /api/events`, `POST /api/gift`. New pages: `/auth`, `/auth/confirm`, `/account` (with AccountClient.tsx contribution slider + live re-projection), `/admin` (SQLite funnel + plan/issuer stats), `/g/[token]` (gift link with click increment). Event tracking added to all setup steps, Done screen, and ProjectionCard slider. Projection nudge added to ProjectionCard (+$25/mo comparison line). `next.config.ts` updated with webpack externals for `better-sqlite3`. `npm run build` passes with zero errors.
+
+**Business impact:**
+Users can now save progress to a local SQLite database by signing in via a magic link printed to the terminal — no email service required. The event funnel in `/admin` gives first-party behavioral data (projection interactions, step completions, flow completions) from day one, enabling data-driven iteration before any external analytics are added.
+
+**Partial / deferred items:**
+- Done screen gift link generator still uses query-param URL for all users (signed-in users should call `/api/gift` for DB-backed tokens — minor)
+- `trackEvent('gift_link_clicked')` not fired on `/g/[token]` page load (tracked on send only)
+- Welcome-back banner after `/auth/confirm` not implemented
+
+---
+
 ## 2026-02-23 — Phase 1 MVP Build
 
 **What was built:**
