@@ -1,8 +1,9 @@
 # # Local AI workspace — not tracked
 # ai/
 
-# Editor config
+# Editor and AI tool config
 .cursorrules
+.claude/
 
 # Dependencies
 node_modules/
