@@ -4,6 +4,8 @@
 
 - **PRD:** [aiDocs/prd.md](prd.md) — full product requirements, scope decisions, and 5-day build plan
 - **Decisions:** [aiDocs/decisions.md](decisions.md) — locked decisions and rationale; do not re-litigate
+- **Hypothesis:** [aiDocs/hypothesis.md](hypothesis.md) — founding hypothesis, supporting assumptions, and falsification tests
+- **Differentiation:** [aiDocs/differentiation.md](differentiation.md) — 2x2 positioning grid and competitor breakdown
 - **Copy Guidelines:** [aiDocs/copy-guidelines.md](copy-guidelines.md) — canonical account explainers, tone rules, hard copy rules
 - **Env Vars:** [aiDocs/env-vars.md](env-vars.md) — all environment variables by phase (no values)
 - **Changelog:** [aiDocs/changelog.md](changelog.md) — append-only log of what was built and why it matters
