@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+import Header from "@/components/Header";
 
 const DISCLOSURE = "NestEgg is a financial education tool, not a registered investment adviser. This is not personalized financial advice.";
 
@@ -12,9 +12,7 @@ export default function StepLayout({
 }) {
   return (
     <div className="min-h-screen bg-white flex flex-col">
-      <header className="px-4 py-4 border-b border-gray-100">
-        <Link href="/" className="text-lg font-semibold text-green-700">NestEgg</Link>
-      </header>
+      <Header />
       <div className="px-4 py-3 bg-gray-50 border-b border-gray-100">
         <div className="max-w-lg mx-auto flex items-center gap-2">
           {[1, 2, 3].map((s) => (

@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { getSession } from "@/lib/auth";
 import db from "@/lib/db";
 import Link from "next/link";
+import Header from "@/components/Header";
 
 type EventRow = { event: string; count: number };
 type PlanRow = { step_529_plan_name: string; count: number };
@@ -39,12 +40,12 @@ export default async function AdminPage() {
   `).all() as IssuerRow[];
 
   return (
-    <div className="min-h-screen bg-gray-50 p-8">
-      <div className="max-w-2xl mx-auto space-y-8">
-        <div className="flex items-center justify-between">
-          <h1 className="text-2xl font-bold text-gray-900">NestEgg Admin</h1>
-          <Link href="/" className="text-sm text-green-600 hover:underline">← Back to site</Link>
-        </div>
+    <div className="min-h-screen bg-gray-50">
+      <Header>
+        <Link href="/" className="text-sm text-green-600 hover:underline">← Back to site</Link>
+      </Header>
+      <div className="max-w-2xl mx-auto space-y-8 p-8">
+        <h1 className="text-2xl font-bold text-gray-900">NestEgg Admin</h1>
 
         <div className="bg-white border border-gray-200 rounded-2xl p-6">
           <p className="text-gray-500 text-sm">Total users</p>

@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import Header from "@/components/Header";
 
 export default function AuthPage() {
   const [email, setEmail] = useState("");
@@ -27,9 +28,7 @@ export default function AuthPage() {
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
-      <header className="px-4 py-4 border-b border-gray-100">
-        <Link href="/" className="text-lg font-semibold text-green-700">NestEgg</Link>
-      </header>
+      <Header />
       <main className="flex-1 flex items-center justify-center px-4">
         <div className="w-full max-w-sm">
           {sent ? (

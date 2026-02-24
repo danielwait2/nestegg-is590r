@@ -2,8 +2,8 @@ import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { getSession } from "@/lib/auth";
 import db from "@/lib/db";
+import Header from "@/components/Header";
 import AccountClient from "./AccountClient";
-import Link from "next/link";
 
 type ChildRow = {
   id: number;
@@ -25,10 +25,9 @@ export default async function AccountPage() {
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
-      <header className="px-4 py-4 border-b border-gray-100 flex items-center justify-between">
-        <Link href="/" className="text-lg font-semibold text-green-700">NestEgg</Link>
+      <Header>
         <span className="text-sm text-gray-400">{session.email}</span>
-      </header>
+      </Header>
       <main className="flex-1 px-4 py-8">
         <div className="max-w-lg mx-auto">
           <h1 className="text-2xl font-bold text-gray-900 mb-6">{child.name}&apos;s account</h1>

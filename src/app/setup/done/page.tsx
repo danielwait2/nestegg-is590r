@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import { getChild, getProgress, getProjection } from "@/lib/storage";
+import Header from "@/components/Header";
 import { calcProjection } from "@/lib/projection";
 import { getPlanForState } from "@/data/statePlans";
 import { syncProgress } from "@/lib/syncProgress";
@@ -99,9 +99,7 @@ export default function DonePage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white flex flex-col">
-      <header className="px-4 py-4 border-b border-gray-100">
-        <Link href="/" className="text-lg font-semibold text-green-700">NestEgg</Link>
-      </header>
+      <Header />
 
       <main className="flex-1 px-4 py-8">
         <div className="max-w-lg mx-auto">

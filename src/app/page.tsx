@@ -1,4 +1,5 @@
 import ProjectionCard from "@/components/ProjectionCard";
+import Header from "@/components/Header";
 
 export const metadata = {
   title: "NestEgg — Set Your Kids Up for Life",
@@ -18,8 +19,9 @@ export default async function Home({
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-green-50 to-white">
+      <Header />
       <div className="max-w-2xl mx-auto px-4 py-12">
-        <header className="text-center mb-10">
+        <div className="text-center mb-10">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
             {isGift && childName
               ? `Help build ${childName}'s NestEgg`
@@ -30,7 +32,7 @@ export default async function Home({
               ? `See what a monthly contribution could grow into by ${childName ? `${childName}'s` : "their"} 18th birthday.`
               : "Open a 529, UTMA, and authorized user credit card for your child — in under 10 minutes."}
           </p>
-        </header>
+        </div>
 
         <ProjectionCard
           initialMonthly={initialMonthly}
