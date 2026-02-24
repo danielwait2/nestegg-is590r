@@ -34,10 +34,17 @@ export default function StepCreditPage() {
         Credit history is built over time. Adding your child now means they could have 10+ years of history by the time they&apos;re 18 — giving them a head start most adults don&apos;t have.
       </p>
 
-      <div className="bg-gray-50 border border-gray-100 rounded-xl p-4 mb-6">
+      <div className="bg-gray-50 border border-gray-100 rounded-xl p-4 mb-4">
         <p className="text-xs text-gray-500 font-medium mb-2 uppercase tracking-wide">What you&apos;ll need</p>
         <p className="text-sm text-gray-600">
           Log into your credit card account or call your issuer. You&apos;ll need your child&apos;s name and date of birth — Social Security number is often optional. Takes about 2 minutes.
+        </p>
+      </div>
+
+      <div className="bg-gray-50 border border-gray-100 rounded-xl p-4 mb-6">
+        <p className="text-xs text-gray-500 font-medium mb-2 uppercase tracking-wide">What to expect</p>
+        <p className="text-sm text-gray-600">
+          Look for &quot;Add authorized user&quot; in your account settings or card management page. Your child won&apos;t receive a card — or you can choose not to activate it. They build credit history just by being listed.
         </p>
       </div>
 

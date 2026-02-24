@@ -33,10 +33,27 @@ export default function StepUtmaPage() {
         The 529 is optimized for college. The UTMA is a backstop — if your child starts a business, buys a house, or skips college, this money is still theirs.
       </p>
 
-      <div className="bg-gray-50 border border-gray-100 rounded-xl p-4 mb-6">
+      <div className="bg-blue-50 border border-blue-100 rounded-xl p-4 mb-4">
+        <p className="text-xs text-blue-700 font-medium mb-2 uppercase tracking-wide">Why both a 529 and a UTMA?</p>
+        <p className="text-sm text-gray-700">
+          The 529 is tax-optimized for education. The UTMA is the backstop — no restrictions on how your child uses it. If they start a business, buy a house, or skip school entirely, this money is still theirs. Most families contribute less here and more to the 529.
+        </p>
+      </div>
+
+      <div className="bg-gray-50 border border-gray-100 rounded-xl p-4 mb-4">
         <p className="text-xs text-gray-500 font-medium mb-2 uppercase tracking-wide">What you&apos;ll need</p>
         <p className="text-sm text-gray-600">
           Your Social Security number and your child&apos;s date of birth. No account minimum. Takes about 5 minutes.
+        </p>
+        <p className="text-xs text-gray-400 mt-2">
+          NestEgg never stores your SSN — you enter it directly on Fidelity&apos;s site.
+        </p>
+      </div>
+
+      <div className="bg-gray-50 border border-gray-100 rounded-xl p-4 mb-6">
+        <p className="text-xs text-gray-500 font-medium mb-2 uppercase tracking-wide">What to expect on the site</p>
+        <p className="text-sm text-gray-600">
+          Select &quot;Custodial Account (UTMA/UGMA)&quot; when prompted for account type. You&apos;ll enter your info as custodian and your child&apos;s info as the minor. You can fund it later — no minimum required to open.
         </p>
       </div>
 

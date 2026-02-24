@@ -5,6 +5,22 @@ Format: date, what was built (technical), business impact (1–2 sentences).
 
 ---
 
+## 2026-02-24 — Interview-Driven UX Copy Improvements (Setup Flow)
+
+**What was built:**
+Added contextual copy to all three setup step pages based on user interview feedback:
+
+- **529 page** (`src/app/setup/529/page.tsx`): Added "Good to know" callout addressing two common objections — (1) 529s work for trade/vocational schools and IT certs, not just 4-year colleges; (2) money doesn't disappear if unused for education, it just loses tax benefits on gains. Added SSN trust note ("NestEgg never stores your SSN"). Added "What to expect on the site" callout to orient users after clicking through to the plan site.
+- **UTMA page** (`src/app/setup/utma/page.tsx`): Added "Why both a 529 and a UTMA?" explainer addressing Aaron's question about account tradeoffs. Added SSN trust note. Added "What to expect on the site" callout.
+- **Credit page** (`src/app/setup/credit/page.tsx`): Added "What to expect" callout explaining where to find the "Add authorized user" option and clarifying the child doesn't need to use a card.
+
+All 22 tests passing post-change (no logic changes, copy only).
+
+**Business impact:**
+Directly addresses the two biggest drop-off risks surfaced in user interviews: (1) parents skipping the 529 because they're unsure their child is "college-bound," and (2) users feeling lost after clicking through to official plan sites. The SSN trust notes reduce hesitation around the most sensitive data point in the flow.
+
+---
+
 ## 2026-02-24 — Test-Log-Fix: calcProjection negative-input bug
 
 **What was found:**

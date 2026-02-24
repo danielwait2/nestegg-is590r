@@ -9,7 +9,6 @@ import { getPlanForState } from "@/data/statePlans";
 export default function Step529Page() {
   const router = useRouter();
   const [loaded, setLoaded] = useState(false);
-  const [childName, setChildName] = useState("");
   const [planName, setPlanName] = useState("");
   const [planUrl, setPlanUrl] = useState("");
   const [hasTaxDeduction, setHasTaxDeduction] = useState(false);
@@ -24,7 +23,6 @@ export default function Step529Page() {
       return;
     }
     const plan = getPlanForState(child.state);
-    setChildName(child.name);
     setPlanName(plan.planName);
     setPlanUrl(plan.planUrl);
     setHasTaxDeduction(plan.hasTaxDeduction);
@@ -58,10 +56,28 @@ export default function Step529Page() {
         )}
       </div>
 
-      <div className="bg-gray-50 border border-gray-100 rounded-xl p-4 mb-6">
+      <div className="bg-blue-50 border border-blue-100 rounded-xl p-4 mb-4">
+        <p className="text-xs text-blue-700 font-medium mb-2 uppercase tracking-wide">Good to know</p>
+        <ul className="text-sm text-gray-700 space-y-1 list-disc list-inside">
+          <li>Works for trade schools, vocational programs, and IT certifications — not just 4-year colleges.</li>
+          <li>If your child doesn&apos;t pursue education, the money doesn&apos;t disappear — it stays in the account and keeps growing. You&apos;d just owe taxes on the gains if withdrawn for non-education use (like a regular investment).</li>
+        </ul>
+      </div>
+
+      <div className="bg-gray-50 border border-gray-100 rounded-xl p-4 mb-4">
         <p className="text-xs text-gray-500 font-medium mb-2 uppercase tracking-wide">What you&apos;ll need</p>
         <p className="text-sm text-gray-600">
-          Your Social Security number, your child&apos;s Social Security number (you can add it later if you don&apos;t have it yet), and a bank account to fund the plan. Takes about 5 minutes.
+          Your Social Security number, your child&apos;s SSN (you can add it later if you don&apos;t have it), and a bank account to fund the plan. Takes about 5 minutes.
+        </p>
+        <p className="text-xs text-gray-400 mt-2">
+          NestEgg never stores your SSN — you enter it directly on the plan&apos;s official site.
+        </p>
+      </div>
+
+      <div className="bg-gray-50 border border-gray-100 rounded-xl p-4 mb-6">
+        <p className="text-xs text-gray-500 font-medium mb-2 uppercase tracking-wide">What to expect on the site</p>
+        <p className="text-sm text-gray-600">
+          You&apos;ll create an account, enter beneficiary info (your child), choose a contribution amount and investment option. Ignore anything about employer plans or rollovers — those don&apos;t apply here.
         </p>
       </div>
 
