@@ -12,13 +12,13 @@ A guided, opinionated flow that makes those decisions for them and shows a concr
 
 Each of these must be true for the hypothesis to hold. Any one of them being wrong changes the product strategy.
 
-| # | Assumption | How to test |
-|---|---|---|
-| 1 | The moment of peak intent is at or shortly after birth — not 6 months later | Customer conversations: "When did you first think about your child's finances?" |
-| 2 | Decision paralysis (not cost, not distrust) is the primary barrier to action | Customer conversations: "Why haven't you opened a 529 yet?" |
-| 3 | A concrete dollar projection is the key motivator that converts intent to action | Product metric: projection interaction rate > 40% on landing page |
-| 4 | No existing product serves this specific moment with this breadth | Competitor research: systematic search for trifecta-at-birth products |
-| 5 | Parents will complete a 3-step guided flow without an account or login | Product metric: step completion rate > 50% of flow starters |
+| #   | Assumption                                                                       | How to test                                                                     |
+| --- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| 1   | The moment of peak intent is at or shortly after birth — not 6 months later      | Customer conversations: "When did you first think about your child's finances?" |
+| 2   | Decision paralysis (not cost, not distrust) is the primary barrier to action     | Customer conversations: "Why haven't you opened a 529 yet?"                     |
+| 3   | A concrete dollar projection is the key motivator that converts intent to action | Product metric: projection interaction rate > 40% on landing page               |
+| 4   | No existing product serves this specific moment with this breadth                | Competitor research: systematic search for trifecta-at-birth products           |
+| 5   | Parents will complete a 3-step guided flow without an account or login           | Product metric: step completion rate > 50% of flow starters                     |
 
 ---
 
@@ -38,17 +38,20 @@ The hypothesis is falsified if any of the following is true:
 **Question:** Does a product already exist that walks new parents through opening a 529, UTMA, and authorized user credit card in a single guided session?
 
 **Method:** Systematic search across:
+
 - App stores (iOS + Android): "baby savings," "529 plan," "child investing," "newborn finance"
 - Product Hunt: "529," "college savings," "kid finance"
 - VC portfolio pages: Andreessen Horowitz, Sequoia consumer portfolio companies focused on fintech/family
 - Direct research on known competitors: Greenlight, UNest, Backer, Fabric, Acorns Early, state 529 portals
 
 **Finding:** No product found that satisfies all three criteria simultaneously:
+
 1. Targets the birth / newborn moment (not older children or existing account holders)
 2. Covers all three account types in one session (529 + UTMA + authorized user)
 3. Provides a guided setup flow rather than account management after opening
 
 Closest competitors by criteria:
+
 - **Fabric:** Targets birth moment ✓ — but covers life insurance and wills only, no investing or credit ✗
 - **Backer:** Covers 529 gifting ✓ — but starts after a 529 already exists, not at account opening ✗
 - **UNest:** Covers UTMA investing ✓ — but single account type, no 529 or credit ✗

@@ -1,13 +1,20 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getSession } from '@/lib/auth';
 import db from '@/lib/db';
+import { logger } from '@/lib/logger';
 
 export async function POST(req: NextRequest) {
   const token = req.cookies.get('nestegg_session')?.value;
-  if (!token) return NextResponse.json({ error: 'unauthorized' }, { status: 401 });
+  if (!token) {
+    logger.warn('sync_unauthorized', { route: '/api/sync', reason: 'no_cookie' });
+    return NextResponse.json({ error: 'unauthorized' }, { status: 401 });
+  }
 
   const session = getSession(token);
-  if (!session) return NextResponse.json({ error: 'unauthorized' }, { status: 401 });
+  if (!session) {
+    logger.warn('sync_unauthorized', { route: '/api/sync', reason: 'invalid_session' });
+    return NextResponse.json({ error: 'unauthorized' }, { status: 401 });
+  }
 
   const { child, progress, monthlyAmount } = await req.json();
   if (!child) return NextResponse.json({ ok: true });
@@ -28,6 +35,7 @@ export async function POST(req: NextRequest) {
       VALUES (?, ?, ?, ?, ?, ?)
     `).run(session.userId, child.name, child.birthMonth, child.birthYear, child.state, monthlyAmount ?? 50);
     childId = result.lastInsertRowid as number;
+    logger.info('sync_child_created', { route: '/api/sync', userId: session.userId, childId });
   }
 
   // Upsert progress
@@ -65,5 +73,6 @@ export async function POST(req: NextRequest) {
     }
   }
 
+  logger.info('sync_complete', { route: '/api/sync', userId: session.userId });
   return NextResponse.json({ ok: true });
 }
