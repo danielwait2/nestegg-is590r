@@ -60,4 +60,12 @@ describe('calcProjection', () => {
     const long = calcProjection(200, 18, 0.07);
     expect(long).toBeGreaterThan(short);
   });
+
+  it('negative monthly contribution returns 0 (guard against nonsensical UI output)', () => {
+    expect(calcProjection(-50, 18)).toBe(0);
+  });
+
+  it('negative years returns 0 (guard against nonsensical UI output)', () => {
+    expect(calcProjection(200, -5)).toBe(0);
+  });
 });

@@ -1,0 +1,4 @@
+For your app… two more thoughts 
+1. I believe there are three groups of people. Ones who understand and will use a 529. Ones who understand and don’t use it. And the biggest group just don’t understand it. I think those are the people you target. One problem with that is they may see it as well if we save for their education then they don’t get financial aide. I disagree with that mentality but I think lots of people think that way. 
+2. Make sure people understand that a 529 is not just for college or university bound kids. It works for trade or vocational schools as well. Even getting an IT certificate. 
+3. I guess I have another one. Some may worry about what if they don’t do any type of school or college then what??? The money still grows you won’t lose it. It will be taxed though. You lose the tax benefits if not used for education. 
