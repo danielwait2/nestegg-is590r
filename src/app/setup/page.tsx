@@ -1,8 +1,9 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
 import { setChild } from "@/lib/storage";
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
 import { STATE_PLANS } from "@/data/statePlans";
 import { trackEvent } from "@/lib/events";
 
@@ -31,9 +32,7 @@ export default function SetupPage() {
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
-      <header className="px-4 py-4 border-b border-gray-100">
-        <Link href="/" className="text-lg font-semibold text-green-700">NestEgg</Link>
-      </header>
+      <SiteHeader />
       <main className="flex-1 px-4 py-8">
         <div className="max-w-lg mx-auto">
           <h1 className="text-2xl font-bold text-gray-900 mb-2">Tell us about your child</h1>
@@ -98,11 +97,7 @@ export default function SetupPage() {
           </form>
         </div>
       </main>
-      <footer className="px-4 py-6 border-t border-gray-100 bg-gray-50">
-        <p className="text-xs text-gray-400 text-center">
-          NestEgg is a financial education tool, not a registered investment adviser. This is not personalized financial advice.
-        </p>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

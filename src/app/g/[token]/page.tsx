@@ -1,7 +1,8 @@
 import { notFound } from "next/navigation";
 import db from "@/lib/db";
 import ProjectionCard from "@/components/ProjectionCard";
-import Link from "next/link";
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
 
 type GiftLink = {
   token: string;
@@ -27,21 +28,17 @@ export default async function GiftPage({ params }: { params: Promise<{ token: st
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
+      <SiteHeader />
       <div className="max-w-2xl mx-auto px-4 py-12">
-        <header className="text-center mb-8">
-          <Link href="/" className="text-lg font-semibold text-green-700">NestEgg</Link>
-          <h1 className="text-2xl font-bold text-gray-900 mt-6 mb-2">
+        <div className="text-center mb-8">
+          <h1 className="text-2xl font-bold text-gray-900 mb-2">
             Help build {row.name}&apos;s NestEgg
           </h1>
           <p className="text-gray-500">See what a monthly contribution could grow into by {row.name}&apos;s 18th birthday.</p>
-        </header>
+        </div>
         <ProjectionCard initialBirthYear={row.birth_year} childName={row.name} />
       </div>
-      <footer className="border-t border-gray-100 py-6 px-4 mt-8">
-        <p className="text-xs text-gray-400 text-center max-w-lg mx-auto">
-          NestEgg is a financial education tool, not a registered investment adviser. This is not personalized financial advice.
-        </p>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

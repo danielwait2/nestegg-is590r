@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ProjectionCard from "@/components/ProjectionCard";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
@@ -53,6 +54,16 @@ export default async function Home({
                 <p className="text-sm text-gray-500 mt-1">{item.desc}</p>
               </div>
             ))}
+          </div>
+
+          <div className="mt-12 text-center">
+            <Link
+              href="/setup"
+              className="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-xl transition-colors"
+            >
+              Get started — it&apos;s free →
+            </Link>
+            <p className="text-sm text-gray-400 mt-3">Takes under 10 minutes. No account required.</p>
           </div>
         </div>
       </main>

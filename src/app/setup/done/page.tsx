@@ -1,7 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import { getChild, getProgress, getProjection } from "@/lib/storage";
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
 import { calcProjection } from "@/lib/projection";
 import { getPlanForState } from "@/data/statePlans";
 import { syncProgress } from "@/lib/syncProgress";
@@ -99,9 +100,7 @@ export default function DonePage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white flex flex-col">
-      <header className="px-4 py-4 border-b border-gray-100">
-        <Link href="/" className="text-lg font-semibold text-green-700">NestEgg</Link>
-      </header>
+      <SiteHeader />
 
       <main className="flex-1 px-4 py-8">
         <div className="max-w-lg mx-auto">
@@ -178,11 +177,7 @@ export default function DonePage() {
         </div>
       </main>
 
-      <footer className="px-4 py-6 border-t border-gray-100 bg-gray-50">
-        <p className="text-xs text-gray-400 text-center max-w-lg mx-auto">
-          NestEgg is a financial education tool, not a registered investment adviser. This is not personalized financial advice.
-        </p>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

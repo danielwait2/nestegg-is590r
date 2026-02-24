@@ -2,8 +2,9 @@ import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { getSession } from "@/lib/auth";
 import db from "@/lib/db";
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
 import AccountClient from "./AccountClient";
-import Link from "next/link";
 
 type ChildRow = {
   id: number;
@@ -25,21 +26,14 @@ export default async function AccountPage() {
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
-      <header className="px-4 py-4 border-b border-gray-100 flex items-center justify-between">
-        <Link href="/" className="text-lg font-semibold text-green-700">NestEgg</Link>
-        <span className="text-sm text-gray-400">{session.email}</span>
-      </header>
+      <SiteHeader />
       <main className="flex-1 px-4 py-8">
         <div className="max-w-lg mx-auto">
           <h1 className="text-2xl font-bold text-gray-900 mb-6">{child.name}&apos;s account</h1>
           <AccountClient child={child} />
         </div>
       </main>
-      <footer className="px-4 py-6 border-t border-gray-100 bg-gray-50">
-        <p className="text-xs text-gray-400 text-center">
-          NestEgg is a financial education tool, not a registered investment adviser. This is not personalized financial advice.
-        </p>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }
