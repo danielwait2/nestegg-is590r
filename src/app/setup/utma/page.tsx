@@ -70,6 +70,23 @@ export default function StepUtmaPage() {
         <MarkAsDone stepKey="step2" onChecked={setDone} />
       </div>
 
+      <div className="border-t border-gray-100 pt-6 mb-6">
+        <p className="text-xs text-gray-500 font-medium uppercase tracking-wide mb-4">Common questions</p>
+        <div className="space-y-4">
+          {[
+            { q: "What's the difference between UTMA and UGMA?", a: "UTMA (Uniform Transfers to Minors Act) is available in most states and supports a wider range of assets including real estate. UGMA (Uniform Gift to Minors Act) supports financial assets only. Fidelity uses UTMA/UGMA interchangeably — for most families, there's no practical difference." },
+            { q: "When does my child get control of the account?", a: "At the age of majority in your state — typically 18 or 21. At that point, the account transfers to them and they can use it for anything." },
+            { q: "Is the UTMA better than the 529?", a: "They serve different purposes. The 529 is tax-optimized specifically for education. The UTMA is more flexible but doesn't have tax advantages. Most families treat the 529 as primary and the UTMA as a backstop." },
+            { q: "Do I have to fund it right away?", a: "No. You can open the account today with no money and fund it whenever you're ready. The important thing is to get the account open so the clock starts." },
+          ].map((item) => (
+            <div key={item.q}>
+              <p className="text-sm font-semibold text-gray-800 mb-1">{item.q}</p>
+              <p className="text-sm text-gray-500">{item.a}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
       <button
         onClick={() => router.push("/setup/credit")}
         className={`w-full font-semibold py-3 px-6 rounded-xl transition-colors ${

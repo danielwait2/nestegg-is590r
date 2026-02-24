@@ -56,6 +56,23 @@ export default function StepCreditPage() {
         <MarkAsDone stepKey="step3" onChecked={setDone} />
       </div>
 
+      <div className="border-t border-gray-100 pt-6 mb-6">
+        <p className="text-xs text-gray-500 font-medium uppercase tracking-wide mb-4">Common questions</p>
+        <div className="space-y-4">
+          {[
+            { q: "Will my child get a physical card?", a: "Some issuers automatically send one; others let you opt out. Either way, your child doesn't need to use it — credit history is built just from being listed on the account, regardless of whether a card is ever used." },
+            { q: "Does this affect my credit score?", a: "Adding an authorized user typically has no negative effect on your credit score. It may actually help your child's future credit profile by establishing a long history of on-time payments." },
+            { q: "What if I don't have a credit card?", a: "This step is optional. If you don't have a credit card or prefer not to add your child, skip it — the 529 and UTMA are the higher-priority accounts anyway." },
+            { q: "Does my child need a Social Security number for this?", a: "Often, no — most issuers only require your child's name and date of birth to add them as an authorized user. An SSN is sometimes optional and helps the issuer report the account to credit bureaus under your child's name." },
+          ].map((item) => (
+            <div key={item.q}>
+              <p className="text-sm font-semibold text-gray-800 mb-1">{item.q}</p>
+              <p className="text-sm text-gray-500">{item.a}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
       <button
         onClick={() => router.push("/setup/done")}
         className={`w-full font-semibold py-3 px-6 rounded-xl transition-colors ${

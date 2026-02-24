@@ -5,6 +5,24 @@ Format: date, what was built (technical), business impact (1–2 sentences).
 
 ---
 
+## 2026-02-24 — Site Header, Footer, About Page, and Per-Step FAQs
+
+**What was built:**
+- `src/components/SiteHeader.tsx` — shared nav header with NestEgg logo, About link, and "Get started" CTA. Used on all pages.
+- `src/components/SiteFooter.tsx` — shared footer with nav links and legal disclosure. Replaced inline footers in `page.tsx` and `StepLayout.tsx`.
+- `src/app/about/page.tsx` — new /about page with three sections: "Why NestEgg exists" mission statement, numbered "How it works" explainer, and 8-question FAQ (cost, SSN privacy, not-just-college, 7% return assumption, Fidelity/Utah rationale, all accounts optional).
+- Per-step inline FAQs (4 questions each) added below the "Mark as done" checkbox on all three setup steps:
+  - 529: covers 4-year colleges only? / child skips education? / change contribution? / why this plan?
+  - UTMA: UTMA vs. UGMA? / when does child get control? / UTMA vs. 529? / fund right away?
+  - Credit: physical card? / affect my score? / no credit card? / child need SSN?
+
+All 22 tests passing. No logic changes.
+
+**Business impact:**
+Establishes a consistent site identity (header/footer on every page) and gives parents a place to understand the "why" before committing to setup. Inline FAQs directly address the most common objections surfaced in interviews, reducing hesitation at the point where users are most likely to drop off.
+
+---
+
 ## 2026-02-24 — Interview-Driven UX Copy Improvements (Setup Flow)
 
 **What was built:**

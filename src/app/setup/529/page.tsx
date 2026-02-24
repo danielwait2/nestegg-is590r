@@ -94,6 +94,23 @@ export default function Step529Page() {
         <MarkAsDone stepKey="step1" onChecked={setDone} />
       </div>
 
+      <div className="border-t border-gray-100 pt-6 mb-6">
+        <p className="text-xs text-gray-500 font-medium uppercase tracking-wide mb-4">Common questions</p>
+        <div className="space-y-4">
+          {[
+            { q: "Does a 529 only cover 4-year colleges?", a: "No — it covers trade schools, community college, vocational programs, and IT certifications too. As long as the institution is accredited, qualified expenses are covered." },
+            { q: "What if my child doesn't pursue any education?", a: "The money stays in the account and keeps growing. You can withdraw it for any reason, but gains on non-education withdrawals are subject to income tax (just like a regular investment account). You don't lose the principal." },
+            { q: "Can I change my contribution later?", a: "Yes. You can increase, decrease, or pause contributions at any time. There's no minimum ongoing contribution." },
+            { q: "Why are you recommending this specific plan?", a: hasTaxDeduction ? `${stateLabel} offers a state tax deduction for contributions to ${planName}, which means you get a direct tax benefit for contributing. That makes it the clear first choice for residents.` : `${stateLabel} doesn't offer a meaningful state tax deduction, so we suggest ${planName} — it consistently ranks as one of the lowest-fee 529 plans in the country and is open to all states.` },
+          ].map((item) => (
+            <div key={item.q}>
+              <p className="text-sm font-semibold text-gray-800 mb-1">{item.q}</p>
+              <p className="text-sm text-gray-500">{item.a}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
       <button
         onClick={() => router.push("/setup/utma")}
         className={`w-full font-semibold py-3 px-6 rounded-xl transition-colors ${
