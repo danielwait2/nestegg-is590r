@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getSession } from '@/lib/auth';
 import db from '@/lib/db';
+import { log } from '@/lib/log';
 
 export async function POST(req: NextRequest) {
   const { event, properties } = await req.json();
@@ -16,5 +17,6 @@ export async function POST(req: NextRequest) {
       properties ? JSON.stringify(properties) : null
     );
 
+  log('info', '/api/events', 'event_tracked', { event, userId: session?.userId ?? null });
   return NextResponse.json({ ok: true });
 }

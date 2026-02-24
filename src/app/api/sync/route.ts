@@ -1,13 +1,20 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getSession } from '@/lib/auth';
 import db from '@/lib/db';
+import { log } from '@/lib/log';
 
 export async function POST(req: NextRequest) {
   const token = req.cookies.get('nestegg_session')?.value;
-  if (!token) return NextResponse.json({ error: 'unauthorized' }, { status: 401 });
+  if (!token) {
+    log('warn', '/api/sync', 'unauthorized', { reason: 'no_token' });
+    return NextResponse.json({ error: 'unauthorized' }, { status: 401 });
+  }
 
   const session = getSession(token);
-  if (!session) return NextResponse.json({ error: 'unauthorized' }, { status: 401 });
+  if (!session) {
+    log('warn', '/api/sync', 'unauthorized', { reason: 'invalid_token' });
+    return NextResponse.json({ error: 'unauthorized' }, { status: 401 });
+  }
 
   const { child, progress, monthlyAmount } = await req.json();
   if (!child) return NextResponse.json({ ok: true });
@@ -22,12 +29,14 @@ export async function POST(req: NextRequest) {
       WHERE id = ?
     `).run(child.name, child.birthMonth, child.birthYear, child.state, monthlyAmount ?? 50, existing.id);
     childId = existing.id;
+    log('info', '/api/sync', 'child_updated', { userId: session.userId, childId });
   } else {
     const result = db.prepare(`
       INSERT INTO children (user_id, name, birth_month, birth_year, state, monthly_contribution)
       VALUES (?, ?, ?, ?, ?, ?)
     `).run(session.userId, child.name, child.birthMonth, child.birthYear, child.state, monthlyAmount ?? 50);
     childId = result.lastInsertRowid as number;
+    log('info', '/api/sync', 'child_created', { userId: session.userId, childId });
   }
 
   // Upsert progress
@@ -63,6 +72,7 @@ export async function POST(req: NextRequest) {
         completedAt
       );
     }
+    log('info', '/api/sync', 'progress_synced', { userId: session.userId, childId, completedAt });
   }
 
   return NextResponse.json({ ok: true });
