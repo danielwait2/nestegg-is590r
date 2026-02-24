@@ -5,6 +5,54 @@ Format: date, what was built (technical), business impact (1–2 sentences).
 
 ---
 
+## 2026-02-24 — Test-Log-Fix: calcProjection negative-input bug
+
+**What was found:**
+Running `./scripts/test.sh` (unit-only pass) confirmed all 20 existing tests green. Two new edge-case tests were added to `src/lib/projection.test.ts` to cover negative inputs:
+
+- `calcProjection(-50, 18)` — negative monthly contribution
+- `calcProjection(200, -5)` — negative years to grow
+
+**Log output (failing run):**
+
+```
+FAIL src/lib/projection.test.ts > calcProjection > negative monthly contribution returns 0
+AssertionError: expected -21536.051330174898 to be +0
+  Received: -21536.051330174898
+
+FAIL src/lib/projection.test.ts > calcProjection > negative years returns 0
+AssertionError: expected -10100.39870023293 to be +0
+  Received: -10100.39870023293
+
+Test Files  1 failed | 1 passed (2)
+Tests       2 failed | 20 passed (22)
+```
+
+**Diagnosis:**
+`calcProjection` in `src/lib/projection.ts` had no guard against negative inputs. A negative `monthlyContribution` or negative `yearsToGrow` passed directly into the FV formula, producing a large negative projection value. If ever called with bad input (e.g., a malformed `?monthly=-50` URL param), the ProjectionCard would display a nonsensical negative dollar figure — directly violating the legal requirement that every projection be a meaningful hypothetical illustration.
+
+**Fix applied:**
+Added a single early-return guard at the top of `calcProjection`:
+
+```ts
+if (monthlyContribution < 0 || yearsToGrow < 0) return 0;
+```
+
+**Verification:**
+
+```
+✓ src/lib/projection.test.ts (13 tests)
+✓ src/lib/auth.test.ts (9 tests)
+
+Test Files  2 passed (2)
+Tests       22 passed (22)
+```
+
+**Business impact:**
+The projection engine now safely handles any negative input — a defensive fix that protects the UI from displaying invalid financial figures regardless of how the function is called. Zero regressions; 2 new tests added.
+
+---
+
 ## 2026-02-23 — Phase 2 Local MVP Build (Persistence + Auth)
 
 **What was built:**
