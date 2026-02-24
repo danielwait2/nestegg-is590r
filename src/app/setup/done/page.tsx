@@ -1,8 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
 import { getChild, getProgress, getProjection } from "@/lib/storage";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
 import { calcProjection } from "@/lib/projection";
 import { getPlanForState } from "@/data/statePlans";
 import { syncProgress } from "@/lib/syncProgress";
@@ -100,7 +100,7 @@ export default function DonePage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white flex flex-col">
-      <Header />
+      <SiteHeader />
 
       <main className="flex-1 px-4 py-8">
         <div className="max-w-lg mx-auto">
@@ -177,7 +177,7 @@ export default function DonePage() {
         </div>
       </main>
 
-      <Footer />
+      <SiteFooter />
     </div>
   );
 }

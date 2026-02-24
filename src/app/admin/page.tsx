@@ -3,7 +3,7 @@ import { redirect } from "next/navigation";
 import { getSession } from "@/lib/auth";
 import db from "@/lib/db";
 import Link from "next/link";
-import Header from "@/components/Header";
+import SiteHeader from "@/components/SiteHeader";
 
 type EventRow = { event: string; count: number };
 type PlanRow = { step_529_plan_name: string; count: number };
@@ -41,9 +41,7 @@ export default async function AdminPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header>
-        <Link href="/" className="text-sm text-green-600 hover:underline">← Back to site</Link>
-      </Header>
+      <SiteHeader />
       <div className="max-w-2xl mx-auto space-y-8 p-8">
         <h1 className="text-2xl font-bold text-gray-900">NestEgg Admin</h1>
 

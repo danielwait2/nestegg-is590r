@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
 
 export default function AuthPage() {
   const [email, setEmail] = useState("");
@@ -29,7 +29,7 @@ export default function AuthPage() {
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
-      <Header />
+      <SiteHeader />
       <main className="flex-1 flex items-center justify-center px-4">
         <div className="w-full max-w-sm">
           {sent ? (
@@ -71,7 +71,7 @@ export default function AuthPage() {
           )}
         </div>
       </main>
-      <Footer />
+      <SiteFooter />
     </div>
   );
 }

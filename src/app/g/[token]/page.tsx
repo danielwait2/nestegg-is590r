@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation";
 import db from "@/lib/db";
 import ProjectionCard from "@/components/ProjectionCard";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
 
 type GiftLink = {
   token: string;
@@ -28,7 +28,7 @@ export default async function GiftPage({ params }: { params: Promise<{ token: st
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
-      <Header />
+      <SiteHeader />
       <div className="max-w-2xl mx-auto px-4 py-12">
         <div className="text-center mb-8">
           <h1 className="text-2xl font-bold text-gray-900 mb-2">
@@ -38,7 +38,7 @@ export default async function GiftPage({ params }: { params: Promise<{ token: st
         </div>
         <ProjectionCard initialBirthYear={row.birth_year} childName={row.name} />
       </div>
-      <Footer />
+      <SiteFooter />
     </div>
   );
 }

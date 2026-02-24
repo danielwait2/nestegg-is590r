@@ -2,8 +2,8 @@ import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { getSession } from "@/lib/auth";
 import db from "@/lib/db";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
 import AccountClient from "./AccountClient";
 
 type ChildRow = {
@@ -26,16 +26,14 @@ export default async function AccountPage() {
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
-      <Header>
-        <span className="text-sm text-gray-400">{session.email}</span>
-      </Header>
+      <SiteHeader />
       <main className="flex-1 px-4 py-8">
         <div className="max-w-lg mx-auto">
           <h1 className="text-2xl font-bold text-gray-900 mb-6">{child.name}&apos;s account</h1>
           <AccountClient child={child} />
         </div>
       </main>
-      <Footer />
+      <SiteFooter />
     </div>
   );
 }

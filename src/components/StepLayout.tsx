@@ -1,6 +1,6 @@
 "use client";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
 
 export default function StepLayout({
   step,
@@ -11,7 +11,7 @@ export default function StepLayout({
 }) {
   return (
     <div className="min-h-screen bg-white flex flex-col">
-      <Header />
+      <SiteHeader />
       <div className="px-4 py-3 bg-gray-50 border-b border-gray-100">
         <div className="max-w-lg mx-auto flex items-center gap-2">
           {[1, 2, 3].map((s) => (
@@ -31,7 +31,7 @@ export default function StepLayout({
       <main className="flex-1 px-4 py-8">
         <div className="max-w-lg mx-auto">{children}</div>
       </main>
-      <Footer />
+      <SiteFooter />
     </div>
   );
 }

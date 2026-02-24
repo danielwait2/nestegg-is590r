@@ -5,6 +5,55 @@ Format: date, what was built (technical), business impact (1–2 sentences).
 
 ---
 
+## 2026-02-24 — 529 Roth IRA Rollover Disclosure
+
+**What was built:**
+Added the SECURE 2.0 529-to-Roth IRA rollover provision in three places:
+- `src/app/setup/529/page.tsx` "Good to know" callout — third bullet: after 15 years, up to $35,000 lifetime can roll into a Roth IRA in the child's name (subject to annual Roth contribution limits).
+- `src/app/setup/529/page.tsx` inline FAQ — updated "What if my child doesn't pursue education?" answer to include the rollover option.
+- `src/app/about/page.tsx` FAQ — updated "What if my child doesn't go to college?" answer with the same detail.
+
+All 22 tests passing. Copy-only change.
+
+**Business impact:**
+Addresses a key objection for parents unsure their child will use the 529 — the money can ultimately become a retirement head start, not a dead end.
+
+---
+
+## 2026-02-24 — Site Header, Footer, About Page, and Per-Step FAQs
+
+**What was built:**
+- `src/components/SiteHeader.tsx` — shared nav header with NestEgg logo, About link, and "Get started" CTA. Used on all pages.
+- `src/components/SiteFooter.tsx` — shared footer with nav links and legal disclosure. Replaced inline footers in `page.tsx` and `StepLayout.tsx`.
+- `src/app/about/page.tsx` — new /about page with three sections: "Why NestEgg exists" mission statement, numbered "How it works" explainer, and 8-question FAQ (cost, SSN privacy, not-just-college, 7% return assumption, Fidelity/Utah rationale, all accounts optional).
+- Per-step inline FAQs (4 questions each) added below the "Mark as done" checkbox on all three setup steps:
+  - 529: covers 4-year colleges only? / child skips education? / change contribution? / why this plan?
+  - UTMA: UTMA vs. UGMA? / when does child get control? / UTMA vs. 529? / fund right away?
+  - Credit: physical card? / affect my score? / no credit card? / child need SSN?
+
+All 22 tests passing. No logic changes.
+
+**Business impact:**
+Establishes a consistent site identity (header/footer on every page) and gives parents a place to understand the "why" before committing to setup. Inline FAQs directly address the most common objections surfaced in interviews, reducing hesitation at the point where users are most likely to drop off.
+
+---
+
+## 2026-02-24 — Interview-Driven UX Copy Improvements (Setup Flow)
+
+**What was built:**
+Added contextual copy to all three setup step pages based on user interview feedback:
+
+- **529 page** (`src/app/setup/529/page.tsx`): Added "Good to know" callout addressing two common objections — (1) 529s work for trade/vocational schools and IT certs, not just 4-year colleges; (2) money doesn't disappear if unused for education, it just loses tax benefits on gains. Added SSN trust note ("NestEgg never stores your SSN"). Added "What to expect on the site" callout to orient users after clicking through to the plan site.
+- **UTMA page** (`src/app/setup/utma/page.tsx`): Added "Why both a 529 and a UTMA?" explainer addressing Aaron's question about account tradeoffs. Added SSN trust note. Added "What to expect on the site" callout.
+- **Credit page** (`src/app/setup/credit/page.tsx`): Added "What to expect" callout explaining where to find the "Add authorized user" option and clarifying the child doesn't need to use a card.
+
+All 22 tests passing post-change (no logic changes, copy only).
+
+**Business impact:**
+Directly addresses the two biggest drop-off risks surfaced in user interviews: (1) parents skipping the 529 because they're unsure their child is "college-bound," and (2) users feeling lost after clicking through to official plan sites. The SSN trust notes reduce hesitation around the most sensitive data point in the flow.
+
+---
+
 ## 2026-02-24 — Test-Log-Fix: calcProjection negative-input bug
 
 **What was found:**

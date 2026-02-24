@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
-import Header from "@/components/Header";
+import SiteHeader from "@/components/SiteHeader";
 
 function ConfirmContent() {
   const searchParams = useSearchParams();
@@ -16,7 +16,7 @@ function ConfirmContent() {
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
-      <Header />
+      <SiteHeader />
       <div className="flex-1 flex items-center justify-center px-4">
         <div className="text-center space-y-3">
           <p className="text-gray-500">Signing you in...</p>
