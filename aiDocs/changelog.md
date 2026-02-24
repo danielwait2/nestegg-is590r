@@ -5,6 +5,21 @@ Format: date, what was built (technical), business impact (1–2 sentences).
 
 ---
 
+## 2026-02-24 — 529 Roth IRA Rollover Disclosure
+
+**What was built:**
+Added the SECURE 2.0 529-to-Roth IRA rollover provision in three places:
+- `src/app/setup/529/page.tsx` "Good to know" callout — third bullet: after 15 years, up to $35,000 lifetime can roll into a Roth IRA in the child's name (subject to annual Roth contribution limits).
+- `src/app/setup/529/page.tsx` inline FAQ — updated "What if my child doesn't pursue education?" answer to include the rollover option.
+- `src/app/about/page.tsx` FAQ — updated "What if my child doesn't go to college?" answer with the same detail.
+
+All 22 tests passing. Copy-only change.
+
+**Business impact:**
+Addresses a key objection for parents unsure their child will use the 529 — the money can ultimately become a retirement head start, not a dead end.
+
+---
+
 ## 2026-02-24 — Site Header, Footer, About Page, and Per-Step FAQs
 
 **What was built:**
