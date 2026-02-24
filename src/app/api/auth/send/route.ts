@@ -12,10 +12,7 @@ export async function POST(req: NextRequest) {
   const token = createSession(email);
   const link = `http://localhost:3000/auth/confirm?token=${token}`;
 
-  log('info', '/api/auth/send', 'magic_link_created', { email });
-  console.log('\n--- NestEgg sign-in link ---');
-  console.log(link);
-  console.log('----------------------------\n');
+  log('info', '/api/auth/send', 'magic_link_generated', { link, note: 'dev-only: replace with Resend in Phase 3' });
 
   return NextResponse.json({ ok: true });
 }
