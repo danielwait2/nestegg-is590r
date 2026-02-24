@@ -61,6 +61,7 @@ export default function Step529Page() {
         <ul className="text-sm text-gray-700 space-y-1 list-disc list-inside">
           <li>Works for trade schools, vocational programs, and IT certifications — not just 4-year colleges.</li>
           <li>If your child doesn&apos;t pursue education, the money doesn&apos;t disappear — it stays in the account and keeps growing. You&apos;d just owe taxes on the gains if withdrawn for non-education use (like a regular investment).</li>
+          <li>After 15 years, unused 529 funds can be rolled over into a Roth IRA in your child&apos;s name (up to $35,000 lifetime, subject to annual Roth IRA contribution limits). A great backup plan if education expenses come in under budget.</li>
         </ul>
       </div>
 
@@ -99,7 +100,7 @@ export default function Step529Page() {
         <div className="space-y-4">
           {[
             { q: "Does a 529 only cover 4-year colleges?", a: "No — it covers trade schools, community college, vocational programs, and IT certifications too. As long as the institution is accredited, qualified expenses are covered." },
-            { q: "What if my child doesn't pursue any education?", a: "The money stays in the account and keeps growing. You can withdraw it for any reason, but gains on non-education withdrawals are subject to income tax (just like a regular investment account). You don't lose the principal." },
+            { q: "What if my child doesn't pursue any education?", a: "The money stays in the account and keeps growing. You can withdraw it for any reason, but gains on non-education withdrawals are subject to income tax. After 15 years, you can also roll unused funds into a Roth IRA in your child's name (up to $35,000 lifetime) — turning leftover education savings into a retirement head start." },
             { q: "Can I change my contribution later?", a: "Yes. You can increase, decrease, or pause contributions at any time. There's no minimum ongoing contribution." },
             { q: "Why are you recommending this specific plan?", a: hasTaxDeduction ? `${stateLabel} offers a state tax deduction for contributions to ${planName}, which means you get a direct tax benefit for contributing. That makes it the clear first choice for residents.` : `${stateLabel} doesn't offer a meaningful state tax deduction, so we suggest ${planName} — it consistently ranks as one of the lowest-fee 529 plans in the country and is open to all states.` },
           ].map((item) => (

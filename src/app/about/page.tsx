@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     q: "What if my child doesn't go to college?",
-    a: "The 529 isn't just for 4-year universities — it covers trade schools, vocational programs, community college, and IT certifications. And if your child doesn't pursue education at all, the money doesn't disappear. It stays invested and keeps growing; you'd just owe income tax on the gains if withdrawn for non-education purposes.",
+    a: "The 529 isn't just for 4-year universities — it covers trade schools, vocational programs, community college, and IT certifications. And if your child doesn't pursue education at all, the money doesn't disappear. It stays invested and keeps growing; you'd just owe income tax on the gains if withdrawn for non-education purposes. After 15 years, unused 529 funds can also be rolled over into a Roth IRA in your child's name (up to $35,000 lifetime) — so the money can become retirement savings if it's not needed for education.",
   },
   {
     q: "Why does the projection assume 7% annual return?",
