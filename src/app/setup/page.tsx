@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { setChild } from "@/lib/storage";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { STATE_PLANS } from "@/data/statePlans";
 import { trackEvent } from "@/lib/events";
 
@@ -96,11 +97,7 @@ export default function SetupPage() {
           </form>
         </div>
       </main>
-      <footer className="px-4 py-6 border-t border-gray-100 bg-gray-50">
-        <p className="text-xs text-gray-400 text-center">
-          NestEgg is a financial education tool, not a registered investment adviser. This is not personalized financial advice.
-        </p>
-      </footer>
+      <Footer />
     </div>
   );
 }

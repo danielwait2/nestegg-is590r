@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import db from "@/lib/db";
 import ProjectionCard from "@/components/ProjectionCard";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 type GiftLink = {
   token: string;
@@ -37,11 +38,7 @@ export default async function GiftPage({ params }: { params: Promise<{ token: st
         </div>
         <ProjectionCard initialBirthYear={row.birth_year} childName={row.name} />
       </div>
-      <footer className="border-t border-gray-100 py-6 px-4 mt-8">
-        <p className="text-xs text-gray-400 text-center max-w-lg mx-auto">
-          NestEgg is a financial education tool, not a registered investment adviser. This is not personalized financial advice.
-        </p>
-      </footer>
+      <Footer />
     </div>
   );
 }

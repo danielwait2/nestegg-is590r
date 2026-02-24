@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { getSession } from "@/lib/auth";
 import db from "@/lib/db";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import AccountClient from "./AccountClient";
 
 type ChildRow = {
@@ -34,11 +35,7 @@ export default async function AccountPage() {
           <AccountClient child={child} />
         </div>
       </main>
-      <footer className="px-4 py-6 border-t border-gray-100 bg-gray-50">
-        <p className="text-xs text-gray-400 text-center">
-          NestEgg is a financial education tool, not a registered investment adviser. This is not personalized financial advice.
-        </p>
-      </footer>
+      <Footer />
     </div>
   );
 }

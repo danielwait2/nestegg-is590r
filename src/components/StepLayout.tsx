@@ -1,7 +1,6 @@
 "use client";
 import Header from "@/components/Header";
-
-const DISCLOSURE = "NestEgg is a financial education tool, not a registered investment adviser. This is not personalized financial advice.";
+import Footer from "@/components/Footer";
 
 export default function StepLayout({
   step,
@@ -32,9 +31,7 @@ export default function StepLayout({
       <main className="flex-1 px-4 py-8">
         <div className="max-w-lg mx-auto">{children}</div>
       </main>
-      <footer className="px-4 py-6 border-t border-gray-100 bg-gray-50">
-        <p className="text-xs text-gray-400 text-center max-w-lg mx-auto">{DISCLOSURE}</p>
-      </footer>
+      <Footer />
     </div>
   );
 }

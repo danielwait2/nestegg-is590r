@@ -1,5 +1,7 @@
+import Link from "next/link";
 import ProjectionCard from "@/components/ProjectionCard";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "NestEgg — Set Your Kids Up for Life",
@@ -19,7 +21,11 @@ export default async function Home({
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-green-50 to-white">
-      <Header />
+      <Header>
+        <Link href="/setup" className="text-sm font-medium text-green-600 hover:text-green-700 transition-colors">
+          Get Started →
+        </Link>
+      </Header>
       <div className="max-w-2xl mx-auto px-4 py-12">
         <div className="text-center mb-10">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
@@ -52,13 +58,19 @@ export default async function Home({
             </div>
           ))}
         </div>
+
+        <div className="mt-12 text-center">
+          <Link
+            href="/setup"
+            className="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-xl transition-colors"
+          >
+            Get started — it&apos;s free →
+          </Link>
+          <p className="text-sm text-gray-400 mt-3">Takes under 10 minutes. No account required.</p>
+        </div>
       </div>
 
-      <footer className="border-t border-gray-100 py-6 px-4 mt-8">
-        <p className="text-xs text-gray-400 text-center max-w-lg mx-auto">
-          NestEgg is a financial education tool, not a registered investment adviser. This is not personalized financial advice.
-        </p>
-      </footer>
+      <Footer />
     </main>
   );
 }
