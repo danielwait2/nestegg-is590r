@@ -1,88 +1,284 @@
-Jason Johnson
-1 minute 56 seconds1:56
-Jason Johnson 1 minute 56 seconds
+Presentations Session 1-20260225_123818-Meeting Recording
+February 25, 2026, 7:38PM
+1h 9m 6s
+
+Jason Johnson started transcription
+
+Jason Johnson   1:56
 OK, that looks good. OK.
-Jason Johnson 2 minutes 6 seconds
 OK.
-Jason Johnson 2 minutes 11 seconds
 How about this one? How about this one? Yes, yes, yeah.
-Jason Johnson 2 minutes 17 seconds
 You know.
-Jason Johnson 2 minutes 19 seconds
 Alright, alrighty. Uh, just just use it like a normal mic if you want. Pass them around. Yep. So yeah.
-Jason Johnson 2 minutes 28 seconds
 All right. Well, you go first. Thanks. Is it the top that you talk into? No. OK, I'll just step. That's probably that's that's good, which which really helps you guys right now.
-Jason Johnson 2 minutes 44 seconds
 I'll be over here just so I could pass. Yeah, that way we can.
-Jason Johnson 2 minutes 49 seconds
 Is there a lapel thing on it? There is. There is, yes. Yeah, we can just clip it. So whoever's gonna be, are we all talking equally or is one person? Yeah, we're pretty. Yeah. OK, just ask. OK, we'll just hold it. That's fine.
-Jason Johnson 3 minutes 6 seconds
 Are you guys ready? You guys go for it. OK, awesome. Well, I guess we will get started then. Thank you guys so much for coming. Thank you audience. Really appreciate you guys coming to invest in our product idea.
-Jason Johnson 3 minutes 23 seconds
 We are here to present Nest Egg to you guys. Our goal is to help set up kids for life and really just simplify generational wealth. My name's Dylan. I'm Daniel and I'm McKay. Perfect.
-Jason Johnson 3 minutes 39 seconds
 So just a quick agenda, what we're going to go over with you guys today, we are going to talk about the problem, the product that we built, what our founding hypothesis is, how we found our competitive validation, the customer research that we've done the past.
-Jason Johnson 3 minutes 59 seconds
 Few days, slash few weeks, our market position, the system architecture, the technical process and we'll walk you through a demo of our product as well and then some success metrics that we plan on using.
-Jason Johnson 4 minutes 15 seconds
 Awesome. So leading up to this, we spent a lot of time researching. We were looking for a problem space that was centered around families. We wanted to make families better. We bounced around a handful of ideas, did a lot of research.
-Jason Johnson 4 minutes 34 seconds
 And ultimately ended up on this problem. We felt like it was the most impactful. So what we found was the problem that parents face is that 77% of children don't have 529 plans.
-Jason Johnson 4 minutes 50 seconds
 And 54% of parents have never even heard of one.
-Jason Johnson 4 minutes 57 seconds
 So this system really does break at the decision layer. Obviously with awareness, new parents, anytime they have a new, a new child, they are really invested in their future, right? Obviously they want what's best for them. They want.
-Jason Johnson 5 minutes 15 seconds
 Their life to be better than their own, but sometimes they don't really know how to do that. So that's kind of where this decision layer break happens because parents are really unaware with that data we showed you of.
-Jason Johnson 5 minutes 31 seconds
 Where to start? Maybe what accounts to start for their children, or really what to do at all. I know for me hearing like trust funds, generational wealth, you usually think of people who make millions of dollars, billions of dollars, who can afford that for their children. But you don't really think it's.
-Jason Johnson 5 minutes 51 seconds
 Attainable as a normal family with a normal income. So we found that the primary leverage point where things break were at the decision layer and because of that no actions were made to kind of provide for their their kids futures.
-Jason Johnson 6 minutes 10 seconds
 And the number one barrier was because they didn't even know these were options.
-Jason Johnson 6 minutes 18 seconds
 Perfect. So the product we have is 1 flow, three accounts to set up for your child and do all of this in under 10 minutes. The hook being $100 a month could turn into $43,000.
-Jason Johnson 6 minutes 35 seconds
 For your child by their 18th birthday and it steps us through three different accounts, one being the 529 plan, another being the UTMA account, and a third being the authorized user card. The general flow here is like you're landed on the on the landing page.
-Jason Johnson 6 minutes 55 seconds
 With the hook and you insert your child's information. You go through each of the different account setups and then finally you finished it and you can share these accounts to have your family and friends donate to it, therefore starting the feedback loop where they land.
-Jason Johnson 7 minutes 12 seconds
 At the beginning of the flow, and they're able to help their children too.
-Jason Johnson 7 minutes 20 seconds
 So our founding hypothesis was really based on new parents in the first weeks after birth are maximally motivated to act, but fail because no product removes the blank page problems. Here are a couple assumptions that we ran into and a way that we validated it.
-Jason Johnson 7 minutes 36 seconds
 And have implemented into our our process.
-Jason Johnson 7 minutes 43 seconds
 Yes.
-Jason Johnson 7 minutes 49 seconds
 OK.
-Jason Johnson 7 minutes 51 seconds
 Perfect. And so just to check ourselves, we worked, as was mentioned, a lot with our research and tried to prove ourselves wrong with some different falsification tests. One of that is, does this product already exist? So we did a lot of competitor analysis.
-Jason Johnson 8 minutes 10 seconds
 through these different
-Jason Johnson 8 minutes 13 seconds
 These different companies that already offer something similar and really highlighted the newborn moment as in right whenever their kid's born and also the multi account and found that while some different competitors were doing different parts of that flow.
-Jason Johnson 8 minutes 28 seconds
 Nest egg is the one that can combine all three of those at birth and to be able to set up the child for success for 18 years. And I'm sorry, what is the trifecta at birth position again? Oh yeah, that's the three different accounts setting up the 529, the UTMA and then the.
-Jason Johnson 29 minutes 50 seconds
+Authorized credit. Thank you.
+And with that, we wanted to also dive into our customer research a little bit more. So we were able to talk to 17 different parents, uh, to kinda get their feedback on this and also see what they knew and what they didn't know. And we found that 53% had zero accounts set up. I think we highlighted that earlier as well.
+None had set up credit for their children, but 13 out of 17 found this motivating, that there were things that they could do. And then we found an average likelihood of about 3.5 out of five found that they would the likelihood that they would use this.
+But I also wanted to highlight this quote here that says I wish I just had all the information of everything I could do for my child. And this is where we would like to position ourselves as nest egg to be able to be the one stop shop where they can come find out all this information, be guided to the places that they needed to get need to go.
+And then set it up for their for their children. So again, not a motivation problem, but more of a guidance problem for all these parents.
+And then we were also able to do more customer research, but to go in greater depth with our MVP, with our proof of concept to see how the customers interacted with the flow and what additional information that we could gain. Highlighting this quote in the top right says I have no knowledge on saving plans to set them up in the future. I don't know where.
+Where to go, how to set it up, or if we should do it right now. This allows us to to target these unaware people. We found that there are kind of three different groups of parents, which are those that understand and act. They do something for their kids. They set up some of these accounts, those that understand.
+But don't know essentially where to go, how to act. And the biggest group is those that really don't understand at all what's available, what they can do. And these are the, these are the individuals we're targeting. And with that, these are some common misconceptions that we found with this customer research that.
+For example, 529, a lot of individuals think that it only applies for university education. However, it really applies to many different aspects. It could apply to those going into trade schools and other education opportunities. And then the question of what if they skip school, you're not losing any of that money that they're putting.
+Into a 529, really it can be transitioned over into a Roth IRA and so again more educational information that we can provide to these individuals as they move forward through the process.
+And then going back to our market position and some of the market research that Daniel was highlighting, Nest Egg is at a pivotal position where we're again that kind of trifecta of the multiple accounts at birth, which is a differentiator from our competitors, but also it can be covered along this entire X axis.
+Between at birth and older children. So if somebody starts late, they can still jump in and get started. It doesn't have to be at birth, but we'd really like to position ourselves for those parents that are having these new children. And the competitors don't do that. Competitors don't do that.
+Some and then there are some that do, but it's more for a single account. For example, Backer is one that we found that they have this 529 gifting program. They positioned themselves for at birth, but again, it's just a single account. They don't have the multiple trifecta account that we're offering.
+And then coming into some of our system architecture, really this is a really simple diagram, but you have a new parent, they come into Nest Egg where we give them the projection card, it's gonna hook them in, show them what's possible, then they're gonna go through the setup wizard and then that'll give them access to what's available with 529 plan.
+UTMA through fidelity and then also credit as they move forward and that's kind of our our process.
+Perfect. So some of the technical processes that we went through, Casey, this is more for you. We went through our market research and and things like that and got our PRD and we made some of the decisions, worked with AI on that as well as built out all the different phase Rd. maps.
+And we're currently in the process of implementing it as well as working with iterations on customer feedback. So we went through our our first phase and right now we're on our second phase. We'll walk through what that looks like in just a second, but we have a couple more phases to go based off of.
+Where interviews and customer validation goes from here.
+O Now here's our demo.
+So this is the landing page where the hook and the value proposition is conveyed. There's a slider to kind of show the monthly contribution and really showing what the monthly contribution will translate into dollar value if you set this up for your child and.
+You can go into the flow of how it works.
+Perfect. So yes, once parents are hooked, they realize kind of the potential of $50.00 a month could put into their child's account over 18 years. They start the flow, so obviously they put in their information.
+Put that they live in Utah and it will bring them directly to this page that helps them go to the Utah My 529 plan and set that up on their own. Once they complete that, they'll mark it as done, move to the next step where they can then set up their custodial account.
+Do the same flow, click on the link, it will take them to the fidelity page where they can sign up and then once they bring back they can click that they marked it as done and continue and then the 3rd and final step where they can start their child's credit.
+Credit history. They can add them as a authorized user on their credit card, choose which credit card they use, and once they've completed that, can mark it as done and finish. Once they finish, they can kind of see the overview of what their monthly contribution will.
+Will end up being over the next 18 years and then some share links available. They can share with their friends, their family, their partners, as well as a gifting link where if for their first birthday they can share with grandma and grandpa and they can contribute to those accounts.
+To support the people that they love. So that is kind of the flow and then the feedback loop of how that will go back to the beginning. What we just showed you was actually our first iteration and based on some feedback we have a few updates that Daniel showed.
+Sure.
+Yeah, absolutely. So as we walk through this process with a couple of the new parents that we interviewed, they still had some concerns on like, oh, why am I setting up this account? What benefit does it give to my child and how will it help?
+So we definitely dove deep into the the information section. We added this whole new about page with some FAQs walking through the different accounts, how setting up will lead to the children's financial success as well as inside the individual steps.
+If we go through the flow like for the 529, there's more like bullet points to to inform the the the parent like some good to know information. Maybe this 529 as mentioned earlier, it works for trade schools and after 15 years if they don't go to school, it rolls into the Roth IRA.
+Just giving those parents the Peace of Mind that this is the right flow for their their children. And here's some more common questions at each of the steps and the feedback we got from this was better. They were able to understand why they were opening these accounts.
+And so forth.
+OK.
+And then lastly, just to go over some success metrics of how we'll know if it's working. So we kind of defined different indicators based on success and also failure. Included is a flow completion rate. We want to be able to track this information is, is there any part they're getting stuck on the flow? Where are those pain points?
+We really want to make this as easy, as simple as possible for anyone to come and be able to go through it and know how to do it and then also failure indicators. If if parents, for example, we find that our customer research was a little bit off, they really do know what to do. This isn't as.
+As helpful, then we can pivot to different areas in a different product, but assuming success, we'll move forward with with our plans in place.
+I'm sorry, can you go back to the screen? I'm.
+Understanding this one. So success and you can use projection engagement. Yeah, and it works, but it starts less than 20. What if it's in between? Well, I'll ask that later. Yeah, that's sweet.
+And lastly, we wanted to move, move forward with our pitch for you to green light us. We have found that this is a real gap. Parents need this, they're in need of some of the education that this can provide and we're also able to collaborate with some of these.
+Corporations that set up these accounts to get them more individuals that are benefiting based on the processes that they currently have in place. And we currently have these things live and testing continued and as we continue with the process, we'll be able to continue to.
+Make decisions, pivot as necessary and move forward with the path that it's going to help all new parents out. And this is nasty.
+Nice job. Questions. Thank you. Thank you.
+Do you guys have any questions?
+Let's see. So um, I did have a question. So I I love the slide by the way with the MVP on it. As you said, how far did you get through that process? Like you got your MVP, um, you did your market research and you showed ample interest of that too. So and you've got your.
+I mean, this whole site is is relatively functional. I know you don't have credit card processing plugged in yet or anything like that, which I I'm excited to ask you more questions on that too. But yeah, yeah, yeah. So how far did you get to it? Like you've you've coded obviously.
+Yeah, yeah. I mean we've we've gone through the majority of the process, getting through the the PRDS, the roadmaps, going through our first initial phases. Like you said, we're kind of just at the point right now where it's adding the additional functionality that makes this most successful and drafting new plans for that, adjusting the PRD as necessary and moving forward.
+How did you feel about?
+There is this magic moment, by the way, when you go through the process and you see it for the first time. I mean, how did you feel when it showed up? Was that what you expected? Were there surprises? I mean, what was your experience? Yeah, I mean, as we were building it, it was really exciting to see that like it could make something based of our based off of.
+The both the decisions that we had made previously as well as like just what the MVP said and then from there it was cool to see how quickly we could iterate based off the feedback that we got. We were able to add like the new pages and new sections inside.
+Yeah, super quickly.
+Um.
+One more question. So and I saw that you have it hosted as well. So yeah, was that did it offer you advice on how to do that or did you guys just decide you want to host? Good question. I don't believe it.
+Actually, no, it did suggest that we hosted it. So while we were preparing for this presentation, we gave our project with the A I all the information on your requirements for the project.
+And we were looking for gaps, anything we were missing and it did actually recommend that we host it that way. So it'd be easier to share with like our interviewees and obviously present to you guys. So it did mention to host it. I don't think it said how.
+But we ended up just hosting it on Vercel and we were able to use that to do our our additional user interviews to kinda get some feedback on the MVP as well, which was really useful.
+OK, nice job. Do you have any questions? All good. First off, this is very impressive and I it's so cool. I was the first of that as I was jotting down some notes.
+I'm more pushing it from the mindset of someone who's has no idea what the project is about, right? All of your requirements, just maybe an investment party to see what this is about. OK, so I preface it with that because one of the things that.
+The experience listening to it, I do actually know about a 529, but I noticed a lot of people in the room didn't, right? And so while I was listening, like, Oh yes, I know what that is. We're on board, but I kind of put myself in the shoes of those who didn't.
+And until about like a third of your presentation, they would have had no idea what you were talking about. So that's just one point of feedback. Like if you're trying to tell the story and bring up the pain points, you want everybody in the room to feel that too. Yeah, I think only a handful of us like, Oh yes.
+And even then, I'm like, oh, I think I know what it is. I have them set up a little. So that was that was my first piece of feedback. Yeah, that's great feedback. The other thing that I loved, I had written down what are the benefits? Because as you walk through your first MVP.
+I thought, OK, it just seems like you're directing people somewhere else, but at this point they still have no idea what you're having them sign up to do. So I love that you gathered that feedback and iterated. That was so brilliant. But also seeing that, I think that's where your value is.
+It's not just walking through something that a checklist, but it's that knowledge that's where.
+One of the hard questions you might not have to answer here, but just something to consider when you're listing out all of those competitors, all of them are also different applications, right? But one of your pain points that you brought up at the very beginning of your presentation.
+Was that awareness is a gap. Parents don't even know about these types of accounts. So prior to make an assumption there, if they don't even know what those accounts are, what would lead them to look for an app like this and what would that mean for your application?
+How would you address the gap for awareness? How do you not become like one of those other apps that you're met there? Because if it's not an app, maybe another competitor is just going to your tax advisor and asking them what can I do? Right. So something to consider. I think this is a really great.
+Idea, especially the that's where you're positioning, but I still see the gap of awareness and I'd love to learn a little bit more about that. Yeah, no, that's a really great point and something we didn't super highlight, but in future phases, ways to kind of close that.
+Gap with awareness because obviously our goal is to educate parents and show that it's easy and it's doable right to be able to set up these accounts and help your children in the future. One way that would be a great option is to integrate with.
+Baby registries, so popular one baby list they obviously have. Everyone uses baby registries I think for the most part. So being able to integrate with that to show parents a checklist of.
+Here's the diapers and bottles and everything you need. Here's another way that you can prepare for your child. So integrating with baby registries, maybe some sort of new parent classes that are pretty common that people go to to integrate with those as well would be.
+Some future implementations we have.
+Yeah, I mean really, really good job guys. This you've you've.
+Gone through everything very, very well. I had a lot of very similar questions to Casey as well as Chels. In fact, the biggest question I had was about education awareness. Now that is that's kind of the biggest break point that I'm seeing here.
+Another question I have, you mentioned that you've spoken to like 17 customers, which is really, really good. Good job there. Um.
+The question I have there, what's the caliber of these customers? Meaning are they friends and family, which by the way, it's perfectly fine if they're friends and family. Are they friends and family or are they like more?
+Randomized generic while still trying to get the demographic that you're aiming for. Good question. I think most of them were friends and family with who I think for the most part were young parents, you know, around our age.
+Maybe not making a full income yet, things like that. But yeah, I I would recommend I I think and by the way, for midterm, that's just fine. That's not a problem at all for future feedback on how this goes for the final project and how you're iterating on this.
+You need to find people who don't care enough about you to lie to you. Sure. So like, you need people who are gonna tell you the truth because they don't really care about you. And and so that's just something that when you're looking for customer feedback, make sure you're looking for that.
+I'll have a similar question for everybody by the way on on your customers. The second question is have you considered you have built this with spec driven development and you've done an excellent job for building with spec driven development. Have you considered?
+How would you might make this AI native without being a gimmick? I just want to take that.
+Honestly, we haven't thought a lot about it, but we need to. I think there's a lot of definitely a lot of potential of how we can make it AI native, especially considering our educational.
+I guess pain point that we're trying to address. So I think that could easily be integrated, whether that's just a chat bot on the website itself, things of that nature where question and answers flow freely and we have an agent ready to work those kinds of questions, something like that's what initially comes to mind.
+Yeah, I recommend. I I think that's a good starting spot. Iterate on that idea, really find out like what's really going to help the most there. And then, yeah, I I think that's it for me. Does anyone in the have any questions after Chase has a question?
+Sorry, I I know I've done my lot large, but and you may have touched on this already, but what is just in a nutshell, what is your path to?
+Revenue realization, meaning how do you make money yourselves while also helping your customers? Great question. Yeah, that's that's that's great. Right now we're not focused on it, but we have implementation plans on the affiliate links with the different.
+Accounts you'll be opening. There's like, yeah, affiliate programs with each of the large, you know, 529 or credit cards or things like that, Fidelity, Fidelity that we can tap into. So that was like our initial thought. There's a lot of like legal and.
+Disclosure things we'll need to focus on 1st. It's in our phase, that's in our last phase right now, like phase six. But yeah, that's our current thoughts.
+Anybody else?
 How do you go ahead? Do do you want to bring the the microphone back?
-Jason Johnson 29 minutes 56 seconds
 Right the same.
-Jason Johnson 29 minutes 59 seconds
 I guess I don't.
-Jason Johnson 30 minutes 1 second
 The pressure's on. This is actually really cool and I kind of relate in learning a little bit more about the 529. It was good to learn in this presentation. I'm curious how you guys will market this or like how will you get your customers to learn more about it? Will you partner with people? Will you?
-Jason Johnson 30 minutes 21 seconds
 Is it word of mouth? Like what have you seen that could potentially work if you're going to do it in a marketing situation to get more tests, to get more users to see if this prototype can eventually become reality?
-Jason Johnson 30 minutes 35 seconds
 That's a really good question. Something that we were talking about as we were exploring ideas, trying to find like differentiation was that sometimes, you know, there's a lot of apps, companies, things that already exist that might do part of what we're pitching here.
-Jason Johnson 30 minutes 55 seconds
 But the real value of kind of getting ahead is how we market this. So I think a really great way is to kind of partner with people, social media, one question that we asked.
-Jason Johnson 31 minutes 11 seconds
 Our interviewees is how they would trust this product and I think all but one said that it needed to be recommended by what was the question financial by by some financial institution.
-Jason Johnson 31 minutes 29 seconds
 For them to trust this application. And so I think that would be our number one step and then just doing much better marketing with social media ads, baby registries to really get the word out and get people using it and trying it out.
-Jason Johnson 31 minutes 47 seconds
 Yeah, great question.
-Jason Johnson 31 minutes 50 seconds
 Oh, this isn't a question. I just wanted to say you guys weren't nervous about being on today and I think after this presentation you guys just be in the rest of us. We might not.
+Shout out AI. Awesome job guys. Thank you. Thank you.
+Really nice work. Thanks. OK, OK, team two, come on down.
+It's a good way for us to gauge the length. Yes. Yep, we'll have to go. I'll just do that.
+Yeah, this should be enough time. Oh yeah, it'll be enough time for this group. But for the next lecture, we're gonna have to really time box it. Yeah, yeah. And we'll. So you guys have plenty of time, but I think for the remaining.
+Projects. We'll have to time box it a little bit more carefully because I want to make sure everybody has the right time, but we'll have to time box it close to like maybe 2025 minutes each. Oh.
+Hang on.
+Is that doing it now? Got it up there. We got it here. OK. Yes, you do. Perfect. There you go. Testing. Sweet. OK, so we're team stride.
+A daily planner for focused work. Here's our team. I'm Parker. This is Alex and Caleb. I'm the project manager. This is he's a software engineer and this is the product engineer. So he did a lot of the customer feedback and stuff. Alex did a lot of the.
+Software engineering part of things and then I did kind of Indiana between with everything.
+So this is Chapman. He's a software engineer at a startup company, and he just finished all of his major tasks for the day. It's 1:00 PM and there's a major decision gap. He doesn't know what to do next. He's got Asana.
+Google Calendar, GitHub, all these different resources, but he doesn't know what should be the next task for him to do. So he spends around 15 to 20 minutes going through those and then reprioritizing his day. And so he ended up wasting 15 to 20 minutes. And this is a constant loop that he faces every single day.
+So this is kind of the problem that we have with this. And before we got into this problem, we had a lot of different other ideas about what to do for this project. We thought maybe to get more into task visibility and so we're thinking about converting meeting notes into Asana tasks. We also thought about generating.
+Presentations and doing a lot of different things with AI there. But ultimately we ended up on this problem just because of we feel like we have an unfair advantage in this field because we are at BYU. We are in like an entrepreneurship program. We feel like it would be best to focus on a problem in startups and so the problem that we have is.
+Is that startup software engineers lose productive focus by constantly reshuffling tasks across disconnected tools, leading to constant reprioritization, decision fatigue and context switching.
+All right. So our customers that we came to recognize through research is primarily startup software engineers, software developers, people working in a startup. There is a potential secondary.
+A target group, which could be students with part time jobs that are having to do a lot of context switching, but that's not really who we're focusing on initially. Our initial approach will be primarily for software engineers. The best target audience for us is people that have a lot of tasks.
+A lot of things they need to get done. It's a small team. It might be just them and they're working on trying to figure out what they need to do next, how they get all the things done in their day. People that aren't our user are people that work at more mature organizations, so they might have.
+A very planned out work day already. They're in a lot of meetings, so their day isn't going to change a whole lot. Customers like that, we're not going to focus on at all.
+So in doing our research, we learned that there is pretty much no standard whatsoever for how people organize their tasks. People use things like Trello, Notion, Linear, JIRA to keep track of tickets. They'll use different calendaring apps to keep track of meetings and their time.
+And there's a whole variety of approaches. A lot of people don't even do any kind of planning. They're just kind of there doing whatever work they feel like doing that day. But there's not any form, any standard workflow. And this is a survey that we sent out to.
+Just people at a like in a startup Slack and this is what people responded.
+Yeah, so this is the the system design. So this is the system that we are trying to tackle and help streamline. So everything starts with the the software engineer needing to make a change to their schedule. Once they're working, it tends to be fine.
+But the software engineer finishes a task and they go, OK, now what? So you have to go through your calendar, see if you have a meeting coming up and then look at Asana and say, well, can I do that in the amount of time that I have before this meeting or do I need to break it up into multiple tasks? I need to go look at my notes and see, well, is there more things I need to be doing that isn't in this ticket that we're recording?
+Somewhere in a meeting at some point, and then after you do all that, you get to your task finally. But then somebody might message you on Slack and say, hey, I need this report by end of day and you're like, well, what was all that time used for?
+All right. So, yeah, I'm sorry. You're good.
+There's a lot going on.
+I'd like to and we're gonna come back to it later. All right. So our hypothesis is that startup developers would use an AI generated auto updating daily plan when it requires minimal manual setup and they will report more deep work hours and higher task completion.
+Rates. So we had three main kind of assumptions that we thought we'd test with falsification tests and that's that planning is a top recurring pain point that automation would be like received well and they would accept the AI generated schedules and tasks.
+Or and that they would engage with the app and use it more than 3-4 times a week as they're planning out their days. So the last two we kind of have to have beta users to kind of test that out. But the first one where we're looking at if planning is a pain point we have done a check for.
+So we've interviewed 4 software developers that work at startups or in similar positions. And so our method was basically we interviewed them, we talked about kind of their processes for planning out their day, see when that kind of led to a loss in productivity and then we asked them to rank their top three.
+Challenges when it comes to remaining productive throughout their day. And then we decided if fewer than 50% of them are saying that daily planning or rescheduling is a top three productivity challenge, then this test would fail and our hypothesis would be incorrect.
+Our results was out of the four developers we interviewed, three of them indicated that daily planning is one of their top productivity challenges. So obviously we'd have to reach out to more to get a better sample size, but it's a promising start and then it came to our solution. So basically our solution is to create daily planning without.
+All the overhead. So basically you add your tasks however you want, whether that's through just typing it in through uploading photos or audio, you'll tap build my day and it'll build a realistic schedule for you using the AI. And then eventually we'll have just a little pop up on your laptop or on your phone where you can just.
+Quickly enter in the rogress on a task or if something's going late and the AI will automatically adjust your schedule deending on those changes.
+So this is kind of the system design now with stride. So you see we changed the leverage point, the time estimation and the automation loop. So the leverage point instead of being all human coordination, it's assisted. So the system does all the proposing and kind of the scheduling and the user just has to approve it really fast.
+And then the software engineer still has these calendar meetings. They have their task manager, their notes. Eventually, we'd probably want to integrate those in to automatically get the tasks out. But then Stride will also help them estimate how long it'll take them to do a task, and that can get.
+That can be improved as we get more information on a specific customer. And then ultimately what happens with Stride is the A I will plan the day, the user will work and then they'll update progress or say, oh, my plan changed, I have to do this. Stride will regenerate their schedule, the user will approve it with one button and then they can just continue on with their work without losing.
+Using that momentum of that 15 to 20 minute rescheduling break.
+All right. So this is how we differentiate from some of our competitors because there are tons of planning tools out there. As we saw with the startup thing, everybody has a planning tool that they use three or four, but our main competitors.
+Are things like motion reclaim or just traditional calendars in general. Traditional calendars in general, very manual. You have to put in every single event that you want to do. You have to put in the amount of time it's going to take up everything like that.
+With Motion and Reclaim, they both require manual task entry. So even though they're using a I to build out your schedule, you have to put in every single task on your own. So you're not actually saving that much more time in comparison to a traditional calendar. And the the other difference is Motion and Reclaim are more for a weekly planning session.
+So you put in all your tasks at the beginning of the week and it'll plan out your week for you. But if you want to get just to a daily view, it's a lot harder to plan out a single day at a time. So that's where Stride comes in. Stride is there for your daily planning sessions where you say, hey, I already know I want to do these.
+Three or four tasks. Please block out my time efficiently and make sure I have time for meetings or stuff like that. And so it's simle and automatic, making it easy for the developer to use without losing any time.
+And so this was some of our customer research. These were three of the four people that we interviewed. The first one was Baylor. He's a developer at a startup called Bitty. It's a really new startup.
+And he uses Google Sheets to track all of his backlog of tickets. And he said that his ideal workflow is during his daily planning. They tend to record audio files of the daily planning to be able to figure out what they should be doing that day.
+He said it would be really nice to just take that audio file and just plug it straight into Stride and it would generate all this tasks for him that he mentioned and then organize it. And that's where he came up with the idea of allowing the audio and pictures to be added in for easy automation.
+Another developer we spoke to was Pete. He's working at a start-up called Bacon. It's a little bit of a more mature start-up, but he uses Notebook LM to store all his planning notes. So he'll go into a meeting, he'll record everything, put it into Notebook LM. It'll create a bunch of tasks for him, which is great, but then he doesn't know which one is actually most important.
+Or how long it's gonna take, or you know, which tasks are dependent on what other ones. And so he wants some way to like track his progress on a task as he's going through it throughout his day, especially because being out of startup, you have to wear multiple hats, so he's constantly being called into other meetings.
+And losing track of where he was on each activity. And then finally we talked to Matt, who's a developer at Snare. Matt is actually an example of someone who would not be our target customer because he tends to work on just one feature at a time.
+He has two or three features he'll write down on a whiteboard at the beginning of the week. That's the extent of his planning. And then he will just go and work on that one feature for an entire day. And so an automatic calendar doesn't do much for him.
+Sweet. And then this is our success criteria and failure indicators just for our project. What we said is for success, if our users are saving 15 to 30 minutes per day on planning with AI, then it'll be success. Anything below that, like if the cost exceeds the time, like the cost to put all the tasks in and that exceeds.
+How much they're saving, then it's obviously a failure indicator. Automation adoption is something that we also talked about if they have to constantly re edit their tasks and stuff and we set a bar of less than 40% of auto generated tasks are manually edited.
+Then we know that our tool isn't doing a good enough job. And then we also have AI effectiveness. At least 2/3 of users report the schedule feels realistic and actionable. We want our product to actually be good. And then we have our pivot and failure plans.
+Pivot, success and failure plans. If it's a success, we'd continue to expand our integrations and then also improve on our AI time estimation. And then if it's a failure, we would maybe shift to another problem or just shift to plug-ins for Asana.
+GitHub and Google Calendar kind of just shifting our whole project there. So yeah, now we're going to just dive into the technical process. This is kind of the things we're going to go over and then we also have our link in the bottom right if you want to look at our website right now.
+Yeah.
+So here's our GitHub. Just wanted to show you our GitHub real quick with the code. We have our two two folder project, our AI infrastructure kind of set up here. We have our docs. Obviously we started out with the PRD and that's a lot of the content that we talked about in here.
+Transition that into making our MVP product. Obviously our context one of the most important parts we have our we're using cloud code and then also cursor. So we have those files that are referencing this context MD and then architecture we're doing next JS we have super base and.
+React and then yeah, we have a change log of things here as well. And then we have this AI folder as well with our guides. We we connected to MCP servers to generate these different references and guides.
+And then last but not least, we have our road maps and so we have a high level road map and some of the things we've completed and some of the things that we're continuing to do and we have a a plan and a road map for each of our phases.
+Yeah. So basically anything that Casey told us that we should probably do, we tried to do it. So that includes like, you know, the structured logging, the like automated, automated CLI scripts. We can head back to the presentation now.
+Yeah, I mean the logger, it's just kind of, it's structured so that the AI can like see all the errors and fix it itself, which is really nice. And then these are all our scripts that we have. And then if we go back to the presentation and then just go to the next slide, this is kind of like what it looks like. We've been making like a new branch.
+For each phase basically and so this is one of our git logs. You can see we go to like phase four where we implemented the audio to task with Open AI Whisper and then we merged that into main and then we opened a new branch for phase five where we improved the AI scheduling spread and used like.
+Real browser time because for me it KET scheduling things at 2:00 in the morning and I did not want to do that even though I am sometimes awake so.
+Yeah, kids, guys don't have them. But if you're gonna use nest egg, am I right? All right.
+All right, so this is our this is our user flow. Super simple. Sign up in auth. You just create account. You select your subscription. I mean, you wouldn't need to yet. We haven't set that up. And then you authorize third parties. Right now we can authorize Google Calendar so that it doesn't interfere with any like meetings that you already have scheduled in your day.
+And then daily usage, you would just input your task. You can manually type it out or you can just use audio or put in like screenshots of like notes you've taken. It'll build out the task, click build my day and then you would just use your widget to update progress and the A I would continually regenerate your schedule.
+So we have a demo. It's 3 1/2 minutes long. Do we want to watch it on two times seed or we can skip it if you want?
+Yeah, let's we want to see it. OK. We set up the. Yeah, I don't know how to set up the audio. Yeah, pause real quick. How much? I could just, I mean, I could just explain what's happening. Well, how much, how much time do you guys have left in your presentation? This is the last thing. OK, last thing. I think we can.
+Cuz I can just explain it too. We don't need the audio. Yeah, just go through and explain as. Yeah. All right. So this is our landing page. Very beautiful. Parker's a big UI guy and he did a great job, if I do say so myself. So it's super easy.
+In the video I'm talking about some stuff, so you click sign in. Don't look at my e-mail, there's my fingerprint and then you come to the main dashboard. You can see down here it says Google Calendar connected. That's because I've already authorized it to look at all the tasks in my Google Calendar. It's just read only authorization currently.
+We could kind of branch into right if people wanted to use it as more of a Google Calendar as their main like schedule, but so here's like kind of some manual task entry. I don't ever make client calls, but that was what Claude said would be a good little entry for this task.
+You'll see it just quickly adds it and you can see now that you have a task on your dashboard, you have this option to build my day. If people are using only one task and building my day from that, then they're kind of crazy, but it's an option. So then the two main functionalities that will make it easier for people.
+Is here's a sticky note that I obviously wrote by hand to put in a task and so you can upload that right here.
+And then it sends it to Open A I and it analyzes the photo and tries to extract tasks from that. And so it extracted OK, validate data integrity on the new API report poll and then it got a duration from it and you can add the task.
+And then the most fun thing is the voice task. Sometimes it takes me a while to get to it. So right here I'm saying something like, I don't know, a task in another task. I don't remember what I said.
+But you'll see. No, this was actually at about 11:53 AM because what happened was the night before was a 2:00 night. So it had a transcript or like you could see the file, you click extract tasks and it came up with two tasks from it.
+I said review and approve updated wireframes and draft project status update for stakeholder e-mail and it came up with those tasks. You add them in and then the moment of truth comes where you want to build your day. So this basically it sends it to Open AI, but it also pulls in your Google Calendar to see if there are any events that it needs to be aware of so it doesn't.
+Over schedule you or like double book you and now you can see.
+This is why I remember it's 11:53 AM. So it put the first one at 11:53 AM because we have it set up to where it's not going to put anything before like you press build your day, but you can see it leaves a little 10 minute break between every task.
+Between every task, it's not 100% how we'd love it, but we're gonna keep iterating to see if it'll maybe spread out the task a little bit better. And then also you can see these kind of like lighter ones are from my Google Calendar and it didn't overbook me on those, which was great.
+So, yeah, any questions?
+I'll I just took the mic all day. This is right. Yeah, very well done. My first thought is that you should probably try and get the the the SDK kit for the, you know, those two better Ray Band glasses that have the screen in it and build an app.
+Let's see. Actual questions. You every time I had a question, you'd show the next slide for you to answer it. So thank goodness.
+I mean both, both, both projects have done that really well, so yeah, um.
+Let's see here. Why don't you go next and I'll think of it. Let's have Chelsea, you have any questions? I'm used to. OK, so we have questions. OK, so please don't all go at once.
+OK. So first of all, just a bit of general feedback. I think the story telling was great at the beginning where you were showing the actual customer and who you were, who you're trying to target. I think that was really good. You mentioned that you had done some customer research.
+And I was wondering what research, but then you kind of moved on and showed that research. I love the hypothesis. I think it's missing a little bit of differentiation though. You did kind of show the the. I think you showed the two by two grid, right? But what I'm really.
+The one thing I'm really interested in.
+Is you mentioned there was a customer that didn't fit. Yeah, didn't fit your kind of your customer profile. I would be really interested in seeing what sort of customer would fit the profile and still hates your app.
+That would be really interesting feedback. So I would recommend to find somebody who just like they are, they are the right person and they still hate it. That's something that I think would be really good. Another question that I had is currently it's.
+One shot, right? It looks like you put everything in and it's one shot and it makes your calendar. Is that correct? Yeah, so you can. There's a functionality to like redo it if you don't like it and then it'll send in that built out calendar and say, hey, they don't like this schedule.
+Please, like, modify it so it's not the same schedule. Will it? Will it? How granular is it allowing for that feedback? Like, is it saying they don't like it making a schedule? Yeah, right now it's just that's it. Yeah, I mean, we can iterate and.
+On that feedback a little bit, something to think about is most AI and this is unfortunately coming from very painful experience is building AI applications. The first thought that we have is naturally like it's a one shot thing. You get it, it gets it.
+But really what customers really need when they're using AI, it goes back to what we were saying in class where like 60% of the time, well, no, AI gets you there 60% of the way and then you need to do more iterations and actual expertise on it. And they're going to need to do that with their calendar.
+It does have a drag and drop, so if they don't like where one thing is placed, they can just drag it. Gotcha. They can move things. Yeah, they can move things around. We wanna get it to a point where that's limited so that they really don't have to do that as much. But there's always gonna be a human that's going to move.
+Those things around and stuff and so yeah, I'm I'm very interested also in seeing because currently you have it taking notes in, you have it pulling those are all great inputs. I'm very interested in like what are your inputs there could be and what what like customers would actually.
+So that's generally mine. Do you have any? That's very good by the way. All of this, all of this feedback is more just like including all these things. I have a very similar feedback, but on some it's the other side of the coin, so.
+One of my first thoughts is that the customer group almost seems too focused in that you're targeting startup developers. While there's a lot of startups, I'm curious to kind of the reasoning why it was so targeted.
+With the addition of the exclusion of or not targeting this, one thing to just consider is when you're just starting out with an idea to maybe approach it a little broader to not limit yourself to a solution, but really focus in on.
+Who is your customer at? What is your?
+Which leads me to my second piece of feedback. In your customer research, you talked about how you get interviewed a lot of these developers and ask them what tools they use, what their name kind of look like. I would challenge you to maybe observe what they actually do.
+Yeah, it's because what people tell you they do and what they actually do is almost probably very different. But I think it would also help you uncover possible root cause because what I'm hearing based on your presentation is that the pain point you're attacking.
+Early is people needing to shift.
+Shift gears a little bit and try to pick up where they left off, right? I would challenge that. I think there's something deeper into what's really the pain point that these developers are facing. So again, I think you would uncover that by observing rather than just asking.
+And the other thing that I would, I also agree with Jason, I think that this concept is in a market that is very concentrated, very, very concentrated. However, I think something that would make it unique is.
+It's kind of the opposite of what I said, that it's very focused customer groups, but specifically with the tools I've mentioned, I've personally seen those be common tools that a startup uses because they're not maybe at the scale or a pricing model where they can afford the whole Microsoft suite, right? Yeah, in which case all of the tools and everything.
+Thing you're talking about already is captured in the tools that Microsoft offers. So like I said, kind of two sides of the coin there. It's a little either too focused or not focused enough where you might be able to pitch this exact thing to a startup because they're at that range where.
+They can't afford all of the big suite tools. They have a bunch of different integrations that need that input that you showed, have different ways to do it. So I I kind of explore that a little bit, right? Identify who exactly is your customer and what is their name.
+The last thing I would say is a demo is worth a million words. I will be very honest. Up until you demoed it, I was not sold on this being a really good idea because of my other feedback that seeing the demo I.
+I was sold. It's like, oh OK, this is what could actually help me in my own work. So I think trying to get people to see that might actually help you get that buy in and that value earlier on instead of just talking to them. So would you recommend showing the demo early?
+Earlier in the presentation or is it fine still at the end? I wouldn't necessarily say earlier, but I would say maybe instead of just talking about all of the different features, show them, show them and talk throughout this. OK, showing is much stronger than.
+Correct. And whether that means that you're showing the demo at the beginning or the end with like, we don't want to necessarily be prescriptive. Yes, when you're showing it, there's no recipe that you're following, right? Just.
+In these sorts of meetings, like I'm in these sorts of meetings all the time and the product managers are just like they need to make sure that we have demos that we can show like how are we getting people excited about it? So just thinking how do you confuse that?
+Yep. All right. We got like 2 minutes. OK, I will take 2 minutes.
+So first of all, it's it's just a a bit more advice. This is to everybody, right? So we actually had it's one of our recent Adobe Max conferences a few months ago. We had Mark Romer come. Yeah, and and he talked about, you know, how to create this.
+And I would say this is also under the umbrella of what a creative is. It's talking business, right? So how creatives get people interested and get their buy in with things. And he he said this and he talked about his videos too. I'm sure everybody's probably watched some of the videos.
+He said he always does one thing and that is tell a story. So he he he says make it visceral. Visceral means relating to emotion. And you guys started out with that too. He said, hey, this is so and so. He's this and this struggling with this problem. You know, that is exactly that sort of thing.
+If you carry that story through a little more, or else you present it as saying I am now a developer with, you know, chase made for something and I'm packing this problem and I'm going, oh, it it worked exactly the way I wanted it to. I mean, that's kind of a little bit more of the visceral storytelling that you can get from something that's like this that that helps out. So again, nothing you guys did wrong or anything. That was just something that I thought.
+As we're going also as Jason mentioned, demos are are very important. They weren't as easily easy to do before, whereas now they are like you know as you as you showed you had thought of the product and then you were able to create the code for it following this process.
+And then you have to be able to go with your your pitch deck, which was unheard of before. So we're kind of picking it apart, but you know, extremely well done. Most people could not do that. So you you did that very well. The last question I would have again is same as with the other team. What is your your path to value realization?
+How do you make money? What's the?
+Uh, charge a subscription. I think we'd have like a free tier and then we would have if users want to use more of it, then we would have a subscription and they would have to pay for it like a plus plan.
+Thanks.
+Nice job, you guys.
+OK. Thank you very much.
+I think, well, it's OK. It's hilar. I think we're pretty much done. Um, are there any other questions or concerns about anything before we adjourn?
+And so now that we've turned in everything and we've watched that, there's nothing we can do from now on to like change our slide. That's pretty intimidating. Like, yeah, I was intimidating. Yeah, I'm, I'm sorry. I it works to make it fair for these guys, 'cause I think these guys went first.
+Very brave. You can't really change your slides from here. You can obviously still practice and and prepare for it, but you can change what you say. Yeah, you can change what you say and and I will also say that.
+A good presentation doesn't always leave slides either, so your presentation is way more than your slides. That being said, you guys did an excellent job, especially for for the first shot and you will be going on the last day for your.
+Final. So hopefully that helps. They got through going first day on your interns. So good job everybody. Obviously we can't change from presentation's sake, but like I'm assuming we have we have a lot of time. We can keep developing though, right? But that like, Oh well, you can keep.
+Is that just don't push it to like a repository. You can absolutely keep developing just for the presentation. Yeah, we're locked in so, right. But like, just as far as like, yeah, so by all means, keep developing. Yeah, keep working. Yeah, just not for your actual presentation.
+Yeah, I guess going off that, not related to the rest of the presentations, but how should we kind of be managing our time and continuing to develop? Like what should we be focusing on the next couple of weeks? Yeah, in in preparation for the final, you know, just.
+Great question. The major focus that we have for this midterm is getting the right foundations, right. Some of you are going to from this and and this will be a decision that you make as a team. Some of you will be like it's really good.
+I think we're in the right direction. There's still a lot more that we want to do, uh, research wise, building wise. What can we iterate on? What can we build out more? How can we actually flesh this out and make it a meaningful project? And then there will be others who are like, we don't exactly like after we've done the presentation and we've got feedback.
+Maybe there are gaps that we weren't thinking of, or maybe this is something that we need to pivot on. OK, And that's when you can kind of go back to the drawing board, potentially even pick a different project, use everything that you've learned from this, from this point and reinforce it with your five.
+So go ahead.
+I was just gonna say real fast then, yeah. So see these projects as they could potentially be your future, right? This isn't just a class assignment. This is we're trying to give you a springboard boost into life after school and if it works out really well, if you're seeing potential as you're going through this.
+This could be a business, you know, so, so this is an investment in yourselves. So you don't have to stop now because the assignment is on pause or anything, right? Yeah, invest in it. OK, good. So quick administrative, like if we do our work on it, the GitHub repo will be updated. Are you guys gonna more like?
+Do do we need to? We'll look at the late last minute. OK, don't worry. Yeah, we'll look at, we'll keep updating it. Yeah. OK, last comment. So going off and back, I would love and I don't know what you guys thoughts on this, but if you guys could really give honest feedback on like all of our ideas like from what you know.
+Your expertise, like our revenue models, things that I'd be like, this actually is not a good idea. You guys should try something else or like I actually think this could work. OK, we will probably, we will probably not do that in the live conversation, right? But but for actual feedback, yes, for actual feedback.
+Afterward, if, yeah, we'll we'll be brutal. We'll we'll let Chelsea do it. So I was gonna say I'm like, I'm happy to do that. I was gonna. Yeah, I feel like that'd be really. But I think we all like actually want to make something real that works. So like some honest feedback. Excellent.
+Not sparing the feelings. OK, definitely. We don't like you, but we still don't spare your feelings. It also doesn't mean that we were lying just barely in our feedback either. No, I think we gave your feedback. Well, I was letting them know we weren't lying to that. Oh, that's right. Fair enough. They're asking for honest feedback. Yeah, so.
+I think it's more feedback. Yeah, I think it's. Yeah, I told you guys I would get you out early and late. No, no, no. Good questions, everyone. Great job. Thank you.
+
+Jason Johnson stopped transcription
